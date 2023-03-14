@@ -11,11 +11,11 @@
 
 class EngineUI {
 public:
+    static bool isSceneWindowHover;
     static void Init(GLFWwindow* window);
     static void PreRender(FrameBuffer* sceneBuffer);
     static void PostRender();
     static void Shutdown();
 };
-
 
 #endif //GAZELLE_ENGINEUI_H

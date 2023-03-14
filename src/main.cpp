@@ -34,7 +34,6 @@ float lastFrame = 0.0f;
 
 FrameBuffer* screenBuffer;
 
-
 int main()
 {
     // glfw: initialize and configure
@@ -189,7 +188,7 @@ int main()
         EngineUI::PreRender(screenBuffer);
 
         // render
-        // ------
+        // ------3
         glEnable(GL_DEPTH_TEST); // enable depth testing (is disabled for rendering screen-space quad)
 
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
@@ -251,23 +250,43 @@ int main()
     return 0;
 }
 
+bool EngineUI::isSceneWindowHover;
 // process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
 void processInput(GLFWwindow *window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 
+
+    // TODO: Handle camera input inside class itself
+    if (EngineUI::isSceneWindowHover && glfwGetMouseButton(window, 1))
+        camera.method = FreeLook;
+    if (!glfwGetMouseButton(window, 1) && camera.method != None)
+    {
+        EngineUI::isSceneWindowHover = true;
+        camera.method = None;
+    }
+
     bool speedUp = glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS;
     auto cameraSpeed = static_cast<float>(speedUp ? 6 : 2);
+    switch (camera.method)
+    {
+        case FreeLook:
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
-    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.ProcessKeyboard(FORWARD, deltaTime * cameraSpeed);
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.ProcessKeyboard(BACKWARD, deltaTime * cameraSpeed);
-    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.ProcessKeyboard(LEFT, deltaTime * cameraSpeed);
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.ProcessKeyboard(RIGHT, deltaTime * cameraSpeed);
+            if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+                camera.ProcessKeyboard(FORWARD, deltaTime * cameraSpeed);
+            if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+                camera.ProcessKeyboard(BACKWARD, deltaTime * cameraSpeed);
+            if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+                camera.ProcessKeyboard(LEFT, deltaTime * cameraSpeed);
+            if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+                camera.ProcessKeyboard(RIGHT, deltaTime * cameraSpeed);
+            break;
+        case None:
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+            break;
+    }
 }
 
 // glfw: whenever the mouse moves, this callback is called
@@ -289,13 +308,19 @@ void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double y
     lastX = xPos;
     lastY = yPos;
 
-    camera.ProcessMouseMovement(xOffset, yOffset);
+    // TODO: only designed for one movement method
+    // TODO: Handle camera input inside class itself
+    if (camera.method == FreeLook)
+        camera.ProcessMouseMovement(xOffset, yOffset);
 }
 
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called
 void scroll_callback([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] double xOffset, [[maybe_unused]] double yOffset)
 {
-    camera.ProcessMouseScroll(static_cast<float>(yOffset));
+    // TODO: only designed for one movement method
+    // TODO: Handle camera input inside class itself
+    if (camera.method == FreeLook)
+        camera.ProcessMouseScroll(static_cast<float>(yOffset));
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes

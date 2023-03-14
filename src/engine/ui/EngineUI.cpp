@@ -61,6 +61,8 @@ void EngineUI::PreRender(FrameBuffer* buffer)
     {
         ImGui::BeginChild("SceneRender");
 
+        isSceneWindowHover = ImGui::IsWindowHovered();
+
         ImVec2 size = ImGui::GetContentRegionAvail();
 
         buffer->Bind();
