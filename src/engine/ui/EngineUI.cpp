@@ -25,7 +25,7 @@ void EngineUI::Init(GLFWwindow* window)
     // Setup Dear ImGui style
     //ImGui::StyleCustom(false, 1);
     //ImGui::StyleColorsClassic();
-    ImGui::StyleColorsLight();
+    //ImGui::StyleColorsLight();
 
     // When viewports are enabled we tweak WindowRounding/WindowBg so platform windows can look identical to regular ones.
     ImGuiStyle& style = ImGui::GetStyle();
@@ -54,7 +54,7 @@ void EngineUI::PreRender(FrameBuffer* buffer)
     ImGui::DockSpaceOverViewport();
 
     // 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
-    ImGui::ShowDemoWindow();
+    //ImGui::ShowDemoWindow();
 
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
     ImGui::Begin("Scene");
