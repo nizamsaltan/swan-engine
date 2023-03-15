@@ -2,15 +2,23 @@ cmake_minimum_required(VERSION 3.16.3)
 
 project(Gazelle)
 
-include_directories("include")
 set( SOURCE
         "src/main.cpp"
-        src/cube_vertices.h src/engine/camera.h src/engine/ui/EngineUI.cpp src/engine/ui/EngineUI.h src/engine/ui/imgui_style.h src/engine/FrameBuffer.cpp src/engine/FrameBuffer.h)
+        src/cube_vertices.h src/engine/camera.h src/engine/ui/EngineUI.cpp src/engine/ui/EngineUI.h src/engine/ui/imgui_style.h src/engine/FrameBuffer.cpp src/engine/FrameBuffer.h src/engine/Mesh.h src/engine/Model.h)
 
 set( LIB "lib/glad.c" )
 
 set( INCLUDE "include/" )
-include_directories(${INCLUDE})
+set( Assimp_SOURCE_DIR ${INCLUDE}/assimp )
+include_directories(${INCLUDE}
+        ${Assimp_SOURCE_DIR}/include
+        ${Assimp_SOURCE_DIR}/code)
+
+LINK_DIRECTORIES(
+        ${Assimp_SOURCE_DIR}
+        ${Assimp_SOURCE_DIR}/lib
+)
+
 
 set( IMGUI ${INCLUDE}/imgui/imgui.cpp 
         ${INCLUDE}/imgui/imgui_demo.cpp 
@@ -24,7 +32,7 @@ set( IMGUI ${INCLUDE}/imgui/imgui.cpp
 
 add_executable(${PROJECT_NAME} ${LIB} ${SOURCE} ${IMGUI})
 
-target_link_libraries(${PROJECT_NAME} GL dl glfw)
+target_link_libraries(${PROJECT_NAME} GL dl glfw assimp)
 
 
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
