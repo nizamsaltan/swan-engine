@@ -21,8 +21,8 @@ void setLights(Shader);
 unsigned int loadTexture(const char *path);
 
 // settings
-const unsigned int SCR_WIDTH = 1920;
-const unsigned int SCR_HEIGHT = 1080;
+const unsigned int SCR_WIDTH = 1280;
+const unsigned int SCR_HEIGHT = 720;
 
 // camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -85,13 +85,13 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader ourShader("../resources/shaders/model_loading.vert", "../resources/shaders/model_loading.frag");
+    Shader ourShader("./resources/shaders/model_loading.vert", "/home/nizam/Documents/GitHub/swan-engine/resources/shaders/model_loading.frag");
 
-    Model ourModel("../resources/models/example/backpack/backpack.obj");
+    Model ourModel("/home/nizam/Documents/GitHub/swan-engine/resources/models/example/backpack/backpack.obj");
 
     // Load textures
-    unsigned int diffuseMap = loadTexture("../resources/textures/examples/container_diffuse.png");
-    unsigned int specularMap = loadTexture("../resources/textures/examples/container_specular.png");
+    unsigned int diffuseMap = loadTexture("/home/nizam/Documents/GitHub/swan-engine/resources/textures/examples/container_diffuse.png");
+    unsigned int specularMap = loadTexture("/home/nizam/Documents/GitHub/swan-engine/resources/textures/examples/container_specular.png");
 
     screenBuffer = new FrameBuffer(SCR_WIDTH, SCR_HEIGHT);
 

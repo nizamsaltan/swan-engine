@@ -1,0 +1,3 @@
+/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/Gazelle.dir
+/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/edit_cache.dir
+/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/rebuild_cache.dir

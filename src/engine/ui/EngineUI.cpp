@@ -40,8 +40,8 @@ void EngineUI::Init(GLFWwindow* window)
     ImGui_ImplOpenGL3_Init("#version 330");
 
     // Load Fonts
-    io.Fonts->AddFontFromFileTTF("../include/imgui/misc/fonts/Karla-Regular.ttf", 28.0f);
-    io.Fonts->AddFontDefault();
+    //io.Fonts->AddFontFromFileTTF("../include/imgui/misc/fonts/Karla-Regular.ttf", 28.0f);
+    //io.Fonts->AddFontDefault();
 }
 
 void EngineUI::PreRender(FrameBuffer* buffer)
