@@ -87,7 +87,7 @@ int main()
     // ------------------------------------
     Shader ourShader("./resources/shaders/model_loading.vert", "/home/nizam/Documents/GitHub/swan-engine/resources/shaders/model_loading.frag");
 
-    Model ourModel("/home/nizam/Documents/GitHub/swan-engine/resources/models/example/backpack/backpack.obj");
+    Model ourModel("/home/nizam/Documents/GitHub/swan-engine/resources/models/example/tower/wooden_watch_tower2.obj");
 
     // Load textures
     unsigned int diffuseMap = loadTexture("/home/nizam/Documents/GitHub/swan-engine/resources/textures/examples/container_diffuse.png");
@@ -122,7 +122,7 @@ int main()
         ourShader.use();
 
         // view/projection transformations
-        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 10000.0f);
         glm::mat4 view = camera.GetViewMatrix();
         ourShader.setMat4("projection", projection);
         ourShader.setMat4("view", view);

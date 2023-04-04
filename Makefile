@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Gazelle
+# Target rules for targets named SwanEngine
 
 # Build rule for target.
-Gazelle: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gazelle
-.PHONY : Gazelle
+SwanEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SwanEngine
+.PHONY : SwanEngine
 
 # fast build rule for target.
-Gazelle/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/build
-.PHONY : Gazelle/fast
+SwanEngine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/build
+.PHONY : SwanEngine/fast
 
 include/imgui/backends/imgui_impl_glfw.o: include/imgui/backends/imgui_impl_glfw.cpp.o
 .PHONY : include/imgui/backends/imgui_impl_glfw.o
 
 # target to build an object file
 include/imgui/backends/imgui_impl_glfw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/backends/imgui_impl_glfw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o
 .PHONY : include/imgui/backends/imgui_impl_glfw.cpp.o
 
 include/imgui/backends/imgui_impl_glfw.i: include/imgui/backends/imgui_impl_glfw.cpp.i
@@ -142,7 +142,7 @@ include/imgui/backends/imgui_impl_glfw.i: include/imgui/backends/imgui_impl_glfw
 
 # target to preprocess a source file
 include/imgui/backends/imgui_impl_glfw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/backends/imgui_impl_glfw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.i
 .PHONY : include/imgui/backends/imgui_impl_glfw.cpp.i
 
 include/imgui/backends/imgui_impl_glfw.s: include/imgui/backends/imgui_impl_glfw.cpp.s
@@ -150,7 +150,7 @@ include/imgui/backends/imgui_impl_glfw.s: include/imgui/backends/imgui_impl_glfw
 
 # target to generate assembly for a file
 include/imgui/backends/imgui_impl_glfw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/backends/imgui_impl_glfw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.s
 .PHONY : include/imgui/backends/imgui_impl_glfw.cpp.s
 
 include/imgui/backends/imgui_impl_opengl3.o: include/imgui/backends/imgui_impl_opengl3.cpp.o
@@ -158,7 +158,7 @@ include/imgui/backends/imgui_impl_opengl3.o: include/imgui/backends/imgui_impl_o
 
 # target to build an object file
 include/imgui/backends/imgui_impl_opengl3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o
 .PHONY : include/imgui/backends/imgui_impl_opengl3.cpp.o
 
 include/imgui/backends/imgui_impl_opengl3.i: include/imgui/backends/imgui_impl_opengl3.cpp.i
@@ -166,7 +166,7 @@ include/imgui/backends/imgui_impl_opengl3.i: include/imgui/backends/imgui_impl_o
 
 # target to preprocess a source file
 include/imgui/backends/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/backends/imgui_impl_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.i
 .PHONY : include/imgui/backends/imgui_impl_opengl3.cpp.i
 
 include/imgui/backends/imgui_impl_opengl3.s: include/imgui/backends/imgui_impl_opengl3.cpp.s
@@ -174,7 +174,7 @@ include/imgui/backends/imgui_impl_opengl3.s: include/imgui/backends/imgui_impl_o
 
 # target to generate assembly for a file
 include/imgui/backends/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/backends/imgui_impl_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.s
 .PHONY : include/imgui/backends/imgui_impl_opengl3.cpp.s
 
 include/imgui/imgui.o: include/imgui/imgui.cpp.o
@@ -182,7 +182,7 @@ include/imgui/imgui.o: include/imgui/imgui.cpp.o
 
 # target to build an object file
 include/imgui/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o
 .PHONY : include/imgui/imgui.cpp.o
 
 include/imgui/imgui.i: include/imgui/imgui.cpp.i
@@ -190,7 +190,7 @@ include/imgui/imgui.i: include/imgui/imgui.cpp.i
 
 # target to preprocess a source file
 include/imgui/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.i
 .PHONY : include/imgui/imgui.cpp.i
 
 include/imgui/imgui.s: include/imgui/imgui.cpp.s
@@ -198,7 +198,7 @@ include/imgui/imgui.s: include/imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 include/imgui/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.s
 .PHONY : include/imgui/imgui.cpp.s
 
 include/imgui/imgui_demo.o: include/imgui/imgui_demo.cpp.o
@@ -206,7 +206,7 @@ include/imgui/imgui_demo.o: include/imgui/imgui_demo.cpp.o
 
 # target to build an object file
 include/imgui/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o
 .PHONY : include/imgui/imgui_demo.cpp.o
 
 include/imgui/imgui_demo.i: include/imgui/imgui_demo.cpp.i
@@ -214,7 +214,7 @@ include/imgui/imgui_demo.i: include/imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 include/imgui/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.i
 .PHONY : include/imgui/imgui_demo.cpp.i
 
 include/imgui/imgui_demo.s: include/imgui/imgui_demo.cpp.s
@@ -222,7 +222,7 @@ include/imgui/imgui_demo.s: include/imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 include/imgui/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.s
 .PHONY : include/imgui/imgui_demo.cpp.s
 
 include/imgui/imgui_draw.o: include/imgui/imgui_draw.cpp.o
@@ -230,7 +230,7 @@ include/imgui/imgui_draw.o: include/imgui/imgui_draw.cpp.o
 
 # target to build an object file
 include/imgui/imgui_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_draw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o
 .PHONY : include/imgui/imgui_draw.cpp.o
 
 include/imgui/imgui_draw.i: include/imgui/imgui_draw.cpp.i
@@ -238,7 +238,7 @@ include/imgui/imgui_draw.i: include/imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 include/imgui/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_draw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.i
 .PHONY : include/imgui/imgui_draw.cpp.i
 
 include/imgui/imgui_draw.s: include/imgui/imgui_draw.cpp.s
@@ -246,7 +246,7 @@ include/imgui/imgui_draw.s: include/imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 include/imgui/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_draw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.s
 .PHONY : include/imgui/imgui_draw.cpp.s
 
 include/imgui/imgui_tables.o: include/imgui/imgui_tables.cpp.o
@@ -254,7 +254,7 @@ include/imgui/imgui_tables.o: include/imgui/imgui_tables.cpp.o
 
 # target to build an object file
 include/imgui/imgui_tables.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_tables.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o
 .PHONY : include/imgui/imgui_tables.cpp.o
 
 include/imgui/imgui_tables.i: include/imgui/imgui_tables.cpp.i
@@ -262,7 +262,7 @@ include/imgui/imgui_tables.i: include/imgui/imgui_tables.cpp.i
 
 # target to preprocess a source file
 include/imgui/imgui_tables.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_tables.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.i
 .PHONY : include/imgui/imgui_tables.cpp.i
 
 include/imgui/imgui_tables.s: include/imgui/imgui_tables.cpp.s
@@ -270,7 +270,7 @@ include/imgui/imgui_tables.s: include/imgui/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 include/imgui/imgui_tables.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_tables.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.s
 .PHONY : include/imgui/imgui_tables.cpp.s
 
 include/imgui/imgui_widgets.o: include/imgui/imgui_widgets.cpp.o
@@ -278,7 +278,7 @@ include/imgui/imgui_widgets.o: include/imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 include/imgui/imgui_widgets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_widgets.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o
 .PHONY : include/imgui/imgui_widgets.cpp.o
 
 include/imgui/imgui_widgets.i: include/imgui/imgui_widgets.cpp.i
@@ -286,7 +286,7 @@ include/imgui/imgui_widgets.i: include/imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 include/imgui/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_widgets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.i
 .PHONY : include/imgui/imgui_widgets.cpp.i
 
 include/imgui/imgui_widgets.s: include/imgui/imgui_widgets.cpp.s
@@ -294,7 +294,7 @@ include/imgui/imgui_widgets.s: include/imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 include/imgui/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/include/imgui/imgui_widgets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.s
 .PHONY : include/imgui/imgui_widgets.cpp.s
 
 lib/glad.o: lib/glad.c.o
@@ -302,7 +302,7 @@ lib/glad.o: lib/glad.c.o
 
 # target to build an object file
 lib/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/lib/glad.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/lib/glad.c.o
 .PHONY : lib/glad.c.o
 
 lib/glad.i: lib/glad.c.i
@@ -310,7 +310,7 @@ lib/glad.i: lib/glad.c.i
 
 # target to preprocess a source file
 lib/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/lib/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/lib/glad.c.i
 .PHONY : lib/glad.c.i
 
 lib/glad.s: lib/glad.c.s
@@ -318,7 +318,7 @@ lib/glad.s: lib/glad.c.s
 
 # target to generate assembly for a file
 lib/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/lib/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/lib/glad.c.s
 .PHONY : lib/glad.c.s
 
 src/engine/FrameBuffer.o: src/engine/FrameBuffer.cpp.o
@@ -326,7 +326,7 @@ src/engine/FrameBuffer.o: src/engine/FrameBuffer.cpp.o
 
 # target to build an object file
 src/engine/FrameBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/engine/FrameBuffer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o
 .PHONY : src/engine/FrameBuffer.cpp.o
 
 src/engine/FrameBuffer.i: src/engine/FrameBuffer.cpp.i
@@ -334,7 +334,7 @@ src/engine/FrameBuffer.i: src/engine/FrameBuffer.cpp.i
 
 # target to preprocess a source file
 src/engine/FrameBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/engine/FrameBuffer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.i
 .PHONY : src/engine/FrameBuffer.cpp.i
 
 src/engine/FrameBuffer.s: src/engine/FrameBuffer.cpp.s
@@ -342,7 +342,7 @@ src/engine/FrameBuffer.s: src/engine/FrameBuffer.cpp.s
 
 # target to generate assembly for a file
 src/engine/FrameBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/engine/FrameBuffer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.s
 .PHONY : src/engine/FrameBuffer.cpp.s
 
 src/engine/ui/EngineUI.o: src/engine/ui/EngineUI.cpp.o
@@ -350,7 +350,7 @@ src/engine/ui/EngineUI.o: src/engine/ui/EngineUI.cpp.o
 
 # target to build an object file
 src/engine/ui/EngineUI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/engine/ui/EngineUI.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o
 .PHONY : src/engine/ui/EngineUI.cpp.o
 
 src/engine/ui/EngineUI.i: src/engine/ui/EngineUI.cpp.i
@@ -358,7 +358,7 @@ src/engine/ui/EngineUI.i: src/engine/ui/EngineUI.cpp.i
 
 # target to preprocess a source file
 src/engine/ui/EngineUI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/engine/ui/EngineUI.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.i
 .PHONY : src/engine/ui/EngineUI.cpp.i
 
 src/engine/ui/EngineUI.s: src/engine/ui/EngineUI.cpp.s
@@ -366,7 +366,7 @@ src/engine/ui/EngineUI.s: src/engine/ui/EngineUI.cpp.s
 
 # target to generate assembly for a file
 src/engine/ui/EngineUI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/engine/ui/EngineUI.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.s
 .PHONY : src/engine/ui/EngineUI.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -374,7 +374,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -382,7 +382,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -390,7 +390,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gazelle.dir/build.make CMakeFiles/Gazelle.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -401,7 +401,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Gazelle"
+	@echo "... SwanEngine"
 	@echo "... include/imgui/backends/imgui_impl_glfw.o"
 	@echo "... include/imgui/backends/imgui_impl_glfw.i"
 	@echo "... include/imgui/backends/imgui_impl_glfw.s"

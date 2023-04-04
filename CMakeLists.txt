@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-project(Gazelle)
+project(SwanEngine)
 
 set( SOURCE
         "src/main.cpp"

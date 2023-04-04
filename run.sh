@@ -9,7 +9,7 @@ mv build-debug/* .
 cmake ./CMakeList.txt
 make
 
-./Gazelle &
+./SwanEngine # &
 
 # clean up
-mv Gazelle CMakeCache.txt cmake_install.cmake CMakeFiles/ ./build-debug/
+mv SwanEngine CMakeCache.txt cmake_install.cmake CMakeFiles/ ./build-debug/
