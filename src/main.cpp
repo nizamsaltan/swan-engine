@@ -63,11 +63,7 @@ int main()
     glfwSetCursorPosCallback(window, mouse_callback);
     glfwSetScrollCallback(window, scroll_callback);
 
-    // tell GLFW to capture our mouse
-    //glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-
     // glad: load all OpenGL function pointers
-    // ---------------------------------------
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD" << std::endl;
@@ -77,25 +73,16 @@ int main()
     EngineUI::Init(window);
 
     // tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
-    stbi_set_flip_vertically_on_load(true);
+    //stbi_set_flip_vertically_on_load(false); // not good for uv's
 
     // configure global opengl state
-    // -----------------------------
     glEnable(GL_DEPTH_TEST);
 
-    // build and compile our shader zprogram
-    // ------------------------------------
-    Shader ourShader("./resources/shaders/model_loading.vert", "/home/nizam/Documents/GitHub/swan-engine/resources/shaders/model_loading.frag");
-
-    Model ourModel("/home/nizam/Documents/GitHub/swan-engine/resources/models/example/tower/wooden_watch_tower2.obj");
-
-    // Load textures
-    unsigned int diffuseMap = loadTexture("/home/nizam/Documents/GitHub/swan-engine/resources/textures/examples/container_diffuse.png");
-    unsigned int specularMap = loadTexture("/home/nizam/Documents/GitHub/swan-engine/resources/textures/examples/container_specular.png");
+    // build and compile our shader and model
+    Shader ourShader("./resources/shaders/model_loading.vert", "./resources/shaders/model_loading.frag");
+    Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");
 
     screenBuffer = new FrameBuffer(SCR_WIDTH, SCR_HEIGHT);
-
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); // draw as wireframe
 
     // render loop
     // -----------
@@ -133,6 +120,8 @@ int main()
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
         ourShader.setMat4("model", model);
         ourModel.Draw(ourShader);
+
+        setLights(ourShader);
 
         // now bind back to default framebuffer and draw a quad plane with the attached framebuffer color texture
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
@@ -241,6 +230,9 @@ void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, i
 // utility function for loading a 2D texture from file
 unsigned int loadTexture(char const * path)
 {
+    // Load textures
+    //unsigned int diffuseMap = loadTexture("/home/nizam/Documents/GitHub/swan-engine/resources/textures/examples/container_diffuse.png");
+
     unsigned int textureID;
     glGenTextures(1, &textureID);
 

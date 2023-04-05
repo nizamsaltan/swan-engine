@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6b5e/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW'
-        /usr/bin/make  -f CMakeFiles/cmTC_f6b5e.dir/build.make CMakeFiles/cmTC_f6b5e.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW'
-        Building C object CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c484/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY'
+        /usr/bin/make  -f CMakeFiles/cmTC_4c484.dir/build.make CMakeFiles/cmTC_4c484.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY'
+        Building C object CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
@@ -85,8 +85,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 12.2.1 20230201 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6b5e.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f6b5e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccAUyHdO.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c484.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4c484.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccAY0Q2y.s
         GNU C17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 12.2.1 20230201, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
         
@@ -104,15 +104,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 99df1fbb4c4d7eeb8d93f0979bfab9ce
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6b5e.dir/'
-         as -v --64 -o CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o /tmp/ccAUyHdO.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c484.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o /tmp/ccAY0Q2y.s
         GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_f6b5e
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6b5e.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o -o cmTC_f6b5e 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_4c484
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c484.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o -o cmTC_4c484 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper
@@ -123,11 +123,11 @@ events:
         gcc version 12.2.1 20230201 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6b5e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f6b5e.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJ1DAHA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f6b5e /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6b5e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f6b5e.'
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c484' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c484.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2LXc0A.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c484 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c484' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c484.'
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY'
         
       exitCode: 0
   -
@@ -161,13 +161,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW]
+        ignore line: [Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6b5e/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW']
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_f6b5e.dir/build.make CMakeFiles/cmTC_f6b5e.dir/build]
-        ignore line: [make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-hpaNYW']
-        ignore line: [Building C object CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c484/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_4c484.dir/build.make CMakeFiles/cmTC_4c484.dir/build]
+        ignore line: [make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-0TsfJY']
+        ignore line: [Building C object CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -175,8 +175,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 12.2.1 20230201 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6b5e.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f6b5e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccAUyHdO.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c484.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4c484.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccAY0Q2y.s]
         ignore line: [GNU C17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 12.2.1 20230201  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -194,15 +194,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 99df1fbb4c4d7eeb8d93f0979bfab9ce]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6b5e.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o /tmp/ccAUyHdO.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c484.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o /tmp/ccAY0Q2y.s]
         ignore line: [GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_f6b5e]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6b5e.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o -o cmTC_f6b5e ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_4c484]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c484.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o -o cmTC_4c484 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper]
@@ -213,13 +213,13 @@ events:
         ignore line: [gcc version 12.2.1 20230201 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6b5e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f6b5e.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJ1DAHA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f6b5e /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c484' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c484.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2LXc0A.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c484 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccJ1DAHA.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2LXc0A.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -234,7 +234,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_f6b5e] ==> ignore
+          arg [cmTC_4c484] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o]
@@ -243,7 +243,7 @@ events:
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..]
-          arg [CMakeFiles/cmTC_f6b5e.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_4c484.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -280,8 +280,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -290,13 +290,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_540e9/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr'
-        /usr/bin/make  -f CMakeFiles/cmTC_540e9.dir/build.make CMakeFiles/cmTC_540e9.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr'
-        Building CXX object CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_12e4a/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7'
+        /usr/bin/make  -f CMakeFiles/cmTC_12e4a.dir/build.make CMakeFiles/cmTC_12e4a.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7'
+        Building CXX object CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -304,8 +304,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 12.2.1 20230201 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_540e9.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_540e9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccPpTDWv.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12e4a.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_12e4a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccLcUkV0.s
         GNU C++17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 12.2.1 20230201, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
         
@@ -326,15 +326,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: ab2adc4aa87e9c5b6e6cb24c55e663d5
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_540e9.dir/'
-         as -v --64 -o CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccPpTDWv.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12e4a.dir/'
+         as -v --64 -o CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccLcUkV0.s
         GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_540e9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_540e9.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_540e9 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_12e4a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12e4a.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_12e4a 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper
@@ -345,11 +345,11 @@ events:
         gcc version 12.2.1 20230201 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_540e9' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_540e9.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBUG77W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_540e9 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_540e9' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_540e9.'
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12e4a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12e4a.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpvYmm9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_12e4a /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12e4a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12e4a.'
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7'
         
       exitCode: 0
   -
@@ -389,13 +389,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr]
+        ignore line: [Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7]
         ignore line: []
-        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_540e9/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr']
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_540e9.dir/build.make CMakeFiles/cmTC_540e9.dir/build]
-        ignore line: [make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-Xed0Xr']
-        ignore line: [Building CXX object CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_12e4a/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7']
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_12e4a.dir/build.make CMakeFiles/cmTC_12e4a.dir/build]
+        ignore line: [make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-QMEdU7']
+        ignore line: [Building CXX object CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -403,8 +403,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 12.2.1 20230201 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_540e9.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_540e9.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccPpTDWv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12e4a.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_12e4a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccLcUkV0.s]
         ignore line: [GNU C++17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 12.2.1 20230201  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -425,15 +425,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: ab2adc4aa87e9c5b6e6cb24c55e663d5]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_540e9.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccPpTDWv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12e4a.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccLcUkV0.s]
         ignore line: [GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_540e9]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_540e9.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_540e9 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_12e4a]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12e4a.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_12e4a ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper]
@@ -444,13 +444,13 @@ events:
         ignore line: [gcc version 12.2.1 20230201 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_540e9' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_540e9.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBUG77W.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_540e9 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_12e4a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_12e4a.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpvYmm9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_12e4a /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccBUG77W.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccpvYmm9.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -465,7 +465,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_540e9] ==> ignore
+          arg [cmTC_12e4a] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o]
@@ -474,7 +474,7 @@ events:
           arg [-L/lib/../lib] ==> dir [/lib/../lib]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..]
-          arg [CMakeFiles/cmTC_540e9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_12e4a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -507,8 +507,8 @@ events:
     checks:
       - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -517,18 +517,18 @@ events:
       variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_be5ae/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt'
-        /usr/bin/make  -f CMakeFiles/cmTC_be5ae.dir/build.make CMakeFiles/cmTC_be5ae.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt'
-        Building C object CMakeFiles/cmTC_be5ae.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_be5ae.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt/CheckFunctionExists.c
-        Linking C executable cmTC_be5ae
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be5ae.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_be5ae.dir/CheckFunctionExists.c.o -o cmTC_be5ae  /usr/lib/libX11.so /usr/lib/libXext.so 
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-rQeAGt'
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f236b/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66'
+        /usr/bin/make  -f CMakeFiles/cmTC_f236b.dir/build.make CMakeFiles/cmTC_f236b.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66'
+        Building C object CMakeFiles/cmTC_f236b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_f236b.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66/CheckFunctionExists.c
+        Linking C executable cmTC_f236b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f236b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_f236b.dir/CheckFunctionExists.c.o -o cmTC_f236b  /usr/lib/libX11.so /usr/lib/libXext.so 
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-K16K66'
         
       exitCode: 0
   -
@@ -540,8 +540,8 @@ events:
     checks:
       - "Looking for gethostbyname"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -550,18 +550,18 @@ events:
       variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_528e1/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul'
-        /usr/bin/make  -f CMakeFiles/cmTC_528e1.dir/build.make CMakeFiles/cmTC_528e1.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul'
-        Building C object CMakeFiles/cmTC_528e1.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_528e1.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul/CheckFunctionExists.c
-        Linking C executable cmTC_528e1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_528e1.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_528e1.dir/CheckFunctionExists.c.o -o cmTC_528e1 
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-gbBwul'
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_801df/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1'
+        /usr/bin/make  -f CMakeFiles/cmTC_801df.dir/build.make CMakeFiles/cmTC_801df.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1'
+        Building C object CMakeFiles/cmTC_801df.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_801df.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1/CheckFunctionExists.c
+        Linking C executable cmTC_801df
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_801df.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_801df.dir/CheckFunctionExists.c.o -o cmTC_801df 
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-MEbvY1'
         
       exitCode: 0
   -
@@ -573,8 +573,8 @@ events:
     checks:
       - "Looking for connect"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -583,18 +583,18 @@ events:
       variable: "CMAKE_HAVE_CONNECT"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b33c1/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh'
-        /usr/bin/make  -f CMakeFiles/cmTC_b33c1.dir/build.make CMakeFiles/cmTC_b33c1.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh'
-        Building C object CMakeFiles/cmTC_b33c1.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_b33c1.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh/CheckFunctionExists.c
-        Linking C executable cmTC_b33c1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b33c1.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_b33c1.dir/CheckFunctionExists.c.o -o cmTC_b33c1 
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-iGO7Bh'
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_54737/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv'
+        /usr/bin/make  -f CMakeFiles/cmTC_54737.dir/build.make CMakeFiles/cmTC_54737.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv'
+        Building C object CMakeFiles/cmTC_54737.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_54737.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv/CheckFunctionExists.c
+        Linking C executable cmTC_54737
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54737.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_54737.dir/CheckFunctionExists.c.o -o cmTC_54737 
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-JIc6qv'
         
       exitCode: 0
   -
@@ -606,8 +606,8 @@ events:
     checks:
       - "Looking for remove"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -616,18 +616,18 @@ events:
       variable: "CMAKE_HAVE_REMOVE"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_249c2/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL'
-        /usr/bin/make  -f CMakeFiles/cmTC_249c2.dir/build.make CMakeFiles/cmTC_249c2.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL'
-        Building C object CMakeFiles/cmTC_249c2.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_249c2.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL/CheckFunctionExists.c
-        Linking C executable cmTC_249c2
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_249c2.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_249c2.dir/CheckFunctionExists.c.o -o cmTC_249c2 
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-CTF6UL'
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2f326/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr'
+        /usr/bin/make  -f CMakeFiles/cmTC_2f326.dir/build.make CMakeFiles/cmTC_2f326.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr'
+        Building C object CMakeFiles/cmTC_2f326.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_2f326.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr/CheckFunctionExists.c
+        Linking C executable cmTC_2f326
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f326.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_2f326.dir/CheckFunctionExists.c.o -o cmTC_2f326 
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-EsTABr'
         
       exitCode: 0
   -
@@ -639,8 +639,8 @@ events:
     checks:
       - "Looking for shmat"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -649,18 +649,18 @@ events:
       variable: "CMAKE_HAVE_SHMAT"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9d984/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ'
-        /usr/bin/make  -f CMakeFiles/cmTC_9d984.dir/build.make CMakeFiles/cmTC_9d984.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ'
-        Building C object CMakeFiles/cmTC_9d984.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_9d984.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ/CheckFunctionExists.c
-        Linking C executable cmTC_9d984
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d984.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_9d984.dir/CheckFunctionExists.c.o -o cmTC_9d984 
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-FaM0YQ'
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4feb6/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4'
+        /usr/bin/make  -f CMakeFiles/cmTC_4feb6.dir/build.make CMakeFiles/cmTC_4feb6.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4'
+        Building C object CMakeFiles/cmTC_4feb6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_4feb6.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4/CheckFunctionExists.c
+        Linking C executable cmTC_4feb6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4feb6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_4feb6.dir/CheckFunctionExists.c.o -o cmTC_4feb6 
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-sxLvd4'
         
       exitCode: 0
   -
@@ -672,8 +672,8 @@ events:
     checks:
       - "Looking for IceConnectionNumber in ICE"
     directories:
-      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1"
-      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1"
+      source: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m"
+      binary: "/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -682,18 +682,18 @@ events:
       variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
       cached: true
       stdout: |
-        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1
+        Change Dir: /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m
         
-        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8d32b/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1'
-        /usr/bin/make  -f CMakeFiles/cmTC_8d32b.dir/build.make CMakeFiles/cmTC_8d32b.dir/build
-        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1'
-        Building C object CMakeFiles/cmTC_8d32b.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_8d32b.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1/CheckFunctionExists.c
-        Linking C executable cmTC_8d32b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d32b.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_8d32b.dir/CheckFunctionExists.c.o -o cmTC_8d32b  -lICE 
-        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1'
-        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-vmUHr1'
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ee416/fast && make[1]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m'
+        /usr/bin/make  -f CMakeFiles/cmTC_ee416.dir/build.make CMakeFiles/cmTC_ee416.dir/build
+        make[2]: Entering directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m'
+        Building C object CMakeFiles/cmTC_ee416.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_ee416.dir/CheckFunctionExists.c.o -c /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m/CheckFunctionExists.c
+        Linking C executable cmTC_ee416
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee416.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_ee416.dir/CheckFunctionExists.c.o -o cmTC_ee416  -lICE 
+        make[2]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m'
+        make[1]: Leaving directory '/home/nizam/Documents/GitHub/swan-engine/CMakeFiles/CMakeScratch/TryCompile-2qV97m'
         
       exitCode: 0
 ...

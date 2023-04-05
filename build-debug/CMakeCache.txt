@@ -230,15 +230,6 @@ Fontconfig_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 Fontconfig_LIBRARY:FILEPATH=/usr/lib/libfontconfig.so
 
-//Value Computed by CMake
-Gazelle_BINARY_DIR:STATIC=/home/nizam/Documents/GitHub/swan-engine
-
-//Value Computed by CMake
-Gazelle_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Gazelle_SOURCE_DIR:STATIC=/home/nizam/Documents/GitHub/swan-engine
-
 //Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
 
