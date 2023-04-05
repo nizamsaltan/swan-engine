@@ -6,12 +6,12 @@ Swan Engine is 3D graphics engine written in C++ using OpenGL. This engine speci
 ![Referance](https://raw.githubusercontent.com/nizamsaltan/swan-engine/main/resources/Screenshot_20230405.png)
 
 ### Requirements
-sudo pacman -S assimp glfw *cmake* 
+`sudo pacman -S assimp glfw cmake` 
 
 
 ### Tools
-- Glm -> Math Library
-- ImGUI -> GUI
-- Assimp -> Model Importer
-- STB -> Image Loading
-- GLFW -> Window
+- [GLFW](https://www.glfw.org/) -> Window creation
+- [ImGUI](https://github.com/ocornut/imgui) -> GUI
+- [Glm](https://github.com/g-truc/glm) -> Math library
+- [Assimp](https://github.com/assimp/assimp) -> Model importer
+- [STB](https://github.com/nothings/stb/blob/master/stb_image.h) -> Image loader
