@@ -4,9 +4,9 @@
 
 #include "EngineUI.h"
 
-#include "imgui/imgui.h"
-#include "imgui/backends/imgui_impl_glfw.h"
-#include "imgui/backends/imgui_impl_opengl3.h"
+#include <imgui/imgui.h>
+#include <imgui/backends/imgui_impl_glfw.h>
+#include <imgui/backends/imgui_impl_opengl3.h>
 #include "imgui_style.h"
 
 void EngineUI::Init(GLFWwindow* window)
@@ -40,7 +40,7 @@ void EngineUI::Init(GLFWwindow* window)
     ImGui_ImplOpenGL3_Init("#version 330");
 
     // Load Fonts
-    //io.Fonts->AddFontFromFileTTF("../include/imgui/misc/fonts/Karla-Regular.ttf", 28.0f);
+    io.Fonts->AddFontFromFileTTF("../resources/fonts/Inter/Inter-Regular.ttf", 17.0f);
     //io.Fonts->AddFontDefault();
 }
 
@@ -53,7 +53,7 @@ void EngineUI::PreRender(FrameBuffer* buffer)
 
     ImGui::DockSpaceOverViewport();
 
-    // 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
+    // Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
     //ImGui::ShowDemoWindow();
 
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));

@@ -3,13 +3,13 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 #include "engine/shader.h"
 
 #include <iostream>
 #include "cube_vertices.h"
 #include "engine/ui/EngineUI.h"
-#include "engine/FrameBuffer.h"
 #include "engine/camera.h"
 #include "engine/Model.h"
 
@@ -18,7 +18,6 @@ void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double y
 void scroll_callback([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] double xOffset, double yOffset);
 void processInput(GLFWwindow *window);
 void setLights(Shader);
-unsigned int loadTexture(const char *path);
 
 // settings
 const unsigned int SCR_WIDTH = 1280;
@@ -72,15 +71,45 @@ int main()
 
     EngineUI::Init(window);
 
-    // tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
-    //stbi_set_flip_vertically_on_load(false); // not good for uv's
-
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
 
     // build and compile our shader and model
-    Shader ourShader("./resources/shaders/model_loading.vert", "./resources/shaders/model_loading.frag");
-    Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");
+    Shader lightTextureShader("../resources/shaders/texture.vert", "../resources/shaders/texture.frag");
+    Shader ourShader("../resources/shaders/model_loading.vert", "../resources/shaders/model_loading.frag");
+    Model ourModel("../resources/models/example/tower/wooden_watch_tower2.obj");
+
+
+    // Plane
+    unsigned int VBO, VAO, EBO;
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+
+    glBindVertexArray(VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(v_plane_with_texture), v_plane_with_texture, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(plane_indices), plane_indices, GL_STATIC_DRAW);
+
+    // position attribute
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)nullptr);
+    glEnableVertexAttribArray(0);
+    // texture coord attribute
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+
+    // Texture
+    unsigned int texture = TextureLoader::LoadTexture("../resources/textures/engine/lamp.png");
+
+    // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
+    lightTextureShader.use();
+    lightTextureShader.setInt("texture", 0);
+
+
+
 
     screenBuffer = new FrameBuffer(SCR_WIDTH, SCR_HEIGHT);
 
@@ -116,12 +145,47 @@ int main()
 
         // render the loaded model
         glm::mat4 model = glm::mat4(1.0f);
-        model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
+        model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down, so it's at the center of the scene
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
         ourShader.setMat4("model", model);
         ourModel.Draw(ourShader);
 
+
+
+
         setLights(ourShader);
+
+        // bind textures on corresponding texture units
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture);
+
+        // activate shader
+        lightTextureShader.use();
+
+        // create transformations
+        //model         = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+        //view          = glm::mat4(1.0f);
+        //projection    = glm::mat4(1.0f);
+        glm::vec3 pos = glm::vec3(5.0f, 2.5f, 5.0f);
+        model = glm::inverse(glm::lookAt(pos, camera.Position, camera.Up));
+
+        view = camera.GetViewMatrix();
+        projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 1000.0f);
+        // retrieve the matrix uniform locations
+        GLint modelLoc = glGetUniformLocation(lightTextureShader.ID, "model");
+        GLint viewLoc  = glGetUniformLocation(lightTextureShader.ID, "view");
+        // pass them to the shaders (3 different ways)
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
+        // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
+        lightTextureShader.setMat4("projection", projection);
+
+        // render container
+        glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+
+
+
 
         // now bind back to default framebuffer and draw a quad plane with the attached framebuffer color texture
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
@@ -138,6 +202,9 @@ int main()
     }
 
     EngineUI::Shutdown();
+    glDeleteVertexArrays(1, &VAO);
+    glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
 
     // glfw: terminate, clearing all previously allocated GLFW resources.
     glfwTerminate();
@@ -225,47 +292,6 @@ void scroll_callback([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] doubl
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
-}
-
-// utility function for loading a 2D texture from file
-unsigned int loadTexture(char const * path)
-{
-    // Load textures
-    //unsigned int diffuseMap = loadTexture("/home/nizam/Documents/GitHub/swan-engine/resources/textures/examples/container_diffuse.png");
-
-    unsigned int textureID;
-    glGenTextures(1, &textureID);
-
-    int width, height, nrComponents;
-    unsigned char *data = stbi_load(path, &width, &height, &nrComponents, 0);
-    if (data)
-    {
-        GLenum format;
-        if (nrComponents == 1)
-            format = GL_RED;
-        else if (nrComponents == 3)
-            format = GL_RGB;
-        else if (nrComponents == 4)
-            format = GL_RGBA;
-
-        glBindTexture(GL_TEXTURE_2D, textureID);
-        glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-        stbi_image_free(data);
-    }
-    else
-    {
-        std::cout << "Texture failed to load at path: " << path << std::endl;
-        stbi_image_free(data);
-    }
-
-    return textureID;
 }
 
 // set light attributes

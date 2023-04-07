@@ -1,3 +1,6 @@
+// Just have one texture (diffuse) 
+// and doesn't affect by light sources
+
 #version 330 core
 out vec4 FragColor;
 

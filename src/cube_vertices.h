@@ -25,7 +25,7 @@ glm::vec3 cubePositions[] = {
         glm::vec3(-1.3f,  1.0f, -1.5f)
 };
 
-float vertices_with_texture_and_light[] = {
+float v_cube_with_texture_and_light[] = {
         // positions          // normals           // texture coords
         -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
         0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
@@ -70,7 +70,7 @@ float vertices_with_texture_and_light[] = {
         -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f
 };
 
-float vertices[] = {
+float v_cube[] = {
         -0.5f, -0.5f, -0.5f,
         0.5f, -0.5f, -0.5f,
         0.5f,  0.5f, -0.5f,
@@ -114,10 +114,7 @@ float vertices[] = {
         -0.5f,  0.5f, -0.5f,
 };
 
-
-// set up vertex data (and buffer(s)) and configure vertex attributes
-// ------------------------------------------------------------------
-float vertices_with_light[] = {
+float v_cube_with_light[] = {
         -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
         0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
         0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
@@ -161,7 +158,7 @@ float vertices_with_light[] = {
         -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
 };
 
-float vertices_with_texture[] = {
+float v_cube_with_texture[] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
         0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
         0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
@@ -203,6 +200,20 @@ float vertices_with_texture[] = {
         0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
         -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
         -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
+};
+
+float v_plane_with_texture[] = {
+        // positions          // texture coords
+        0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // top right
+        0.5f, -0.5f, 0.0f,   1.0f, 0.0f, // bottom right
+        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, // bottom left
+        -0.5f,  0.5f, 0.0f,   0.0f, 1.0f  // top left
+};
+
+
+unsigned int plane_indices[] = {
+        0, 1, 3, // first triangle
+        1, 2, 3  // second triangle
 };
 
 #endif //GAZELLE_CUBE_VERTICES_H

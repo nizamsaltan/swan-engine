@@ -1,3 +1,6 @@
+// Just have one texture (diffuse) 
+// and doesn't affect by light sources
+
 #version 330 core
 layout (location = 0) in vec3 aPos;
 layout (location = 1) in vec3 aNormal;
