@@ -5,7 +5,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "engine/shader.h"
+#include "engine/Shader.h"
 
 #include <iostream>
 #include "cube_vertices.h"
@@ -74,8 +74,17 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // build and compile our shader and model
-    Shader lightTextureShader("../resources/shaders/texture.vert", "../resources/shaders/texture.frag");
-    Shader ourShader("../resources/shaders/model_loading.vert", "../resources/shaders/model_loading.frag");
+    //Shader lightTextureShader("../resources/shaders/texture.vert", "../resources/shaders/texture.frag");
+    Shader lightTextureShader;
+    lightTextureShader.VertexPath = "../resources/shaders/texture.vert";
+    lightTextureShader.FragmentPath = "../resources/shaders/texture.frag";
+    lightTextureShader.compile();
+
+    Shader ourShader("../resources/shaders/default.vert", "../resources/shaders/default.frag");
+    //Shader ourShader;
+    //ourShader.VertexPath = "../resources/shaders/default.vert";
+    //ourShader.FragmentPath = "../resources/shaders/default.frag";
+    //ourShader.compile();
     Model ourModel("../resources/models/example/tower/wooden_watch_tower2.obj");
 
 
