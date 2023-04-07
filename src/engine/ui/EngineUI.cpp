@@ -40,7 +40,7 @@ void EngineUI::Init(GLFWwindow* window)
     ImGui_ImplOpenGL3_Init("#version 330");
 
     // Load Fonts
-    io.Fonts->AddFontFromFileTTF("../resources/fonts/Inter/Inter-Regular.ttf", 17.0f);
+    io.Fonts->AddFontFromFileTTF("./resources/fonts/Inter/Inter-Regular.ttf", 17.0f);
     //io.Fonts->AddFontDefault();
 }
 

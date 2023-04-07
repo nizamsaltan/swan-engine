@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizam/Documents/GitHub/swan-engine
+CMAKE_SOURCE_DIR = /home/nizam/Documents/swan-engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizam/Documents/GitHub/swan-engine
+CMAKE_BINARY_DIR = /home/nizam/Documents/swan-engine
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizam/Documents/GitHub/swan-engine/CMakeFiles /home/nizam/Documents/GitHub/swan-engine//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizam/Documents/swan-engine/CMakeFiles /home/nizam/Documents/swan-engine//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizam/Documents/GitHub/swan-engine/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizam/Documents/swan-engine/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -345,6 +345,78 @@ src/engine/FrameBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.s
 .PHONY : src/engine/FrameBuffer.cpp.s
 
+src/engine/TextureLoader.o: src/engine/TextureLoader.cpp.o
+.PHONY : src/engine/TextureLoader.o
+
+# target to build an object file
+src/engine/TextureLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o
+.PHONY : src/engine/TextureLoader.cpp.o
+
+src/engine/TextureLoader.i: src/engine/TextureLoader.cpp.i
+.PHONY : src/engine/TextureLoader.i
+
+# target to preprocess a source file
+src/engine/TextureLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.i
+.PHONY : src/engine/TextureLoader.cpp.i
+
+src/engine/TextureLoader.s: src/engine/TextureLoader.cpp.s
+.PHONY : src/engine/TextureLoader.s
+
+# target to generate assembly for a file
+src/engine/TextureLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.s
+.PHONY : src/engine/TextureLoader.cpp.s
+
+src/engine/components/EngineCamera.o: src/engine/components/EngineCamera.cpp.o
+.PHONY : src/engine/components/EngineCamera.o
+
+# target to build an object file
+src/engine/components/EngineCamera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o
+.PHONY : src/engine/components/EngineCamera.cpp.o
+
+src/engine/components/EngineCamera.i: src/engine/components/EngineCamera.cpp.i
+.PHONY : src/engine/components/EngineCamera.i
+
+# target to preprocess a source file
+src/engine/components/EngineCamera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.i
+.PHONY : src/engine/components/EngineCamera.cpp.i
+
+src/engine/components/EngineCamera.s: src/engine/components/EngineCamera.cpp.s
+.PHONY : src/engine/components/EngineCamera.s
+
+# target to generate assembly for a file
+src/engine/components/EngineCamera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.s
+.PHONY : src/engine/components/EngineCamera.cpp.s
+
+src/engine/components/PointLight.o: src/engine/components/PointLight.cpp.o
+.PHONY : src/engine/components/PointLight.o
+
+# target to build an object file
+src/engine/components/PointLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o
+.PHONY : src/engine/components/PointLight.cpp.o
+
+src/engine/components/PointLight.i: src/engine/components/PointLight.cpp.i
+.PHONY : src/engine/components/PointLight.i
+
+# target to preprocess a source file
+src/engine/components/PointLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.i
+.PHONY : src/engine/components/PointLight.cpp.i
+
+src/engine/components/PointLight.s: src/engine/components/PointLight.cpp.s
+.PHONY : src/engine/components/PointLight.s
+
+# target to generate assembly for a file
+src/engine/components/PointLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.s
+.PHONY : src/engine/components/PointLight.cpp.s
+
 src/engine/ui/EngineUI.o: src/engine/ui/EngineUI.cpp.o
 .PHONY : src/engine/ui/EngineUI.o
 
@@ -429,6 +501,15 @@ help:
 	@echo "... src/engine/FrameBuffer.o"
 	@echo "... src/engine/FrameBuffer.i"
 	@echo "... src/engine/FrameBuffer.s"
+	@echo "... src/engine/TextureLoader.o"
+	@echo "... src/engine/TextureLoader.i"
+	@echo "... src/engine/TextureLoader.s"
+	@echo "... src/engine/components/EngineCamera.o"
+	@echo "... src/engine/components/EngineCamera.i"
+	@echo "... src/engine/components/EngineCamera.s"
+	@echo "... src/engine/components/PointLight.o"
+	@echo "... src/engine/components/PointLight.i"
+	@echo "... src/engine/components/PointLight.s"
 	@echo "... src/engine/ui/EngineUI.o"
 	@echo "... src/engine/ui/EngineUI.i"
 	@echo "... src/engine/ui/EngineUI.s"

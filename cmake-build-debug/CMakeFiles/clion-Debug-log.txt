@@ -1,4 +1,0 @@
-/home/nizam/.clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nizam/.clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/nizam/Documents/swan-engine -B /home/nizam/Documents/swan-engine/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /home/nizam/Documents/swan-engine/cmake-build-debug

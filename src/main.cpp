@@ -3,21 +3,20 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
 
 #include <iostream>
-#include "cube_vertices.h"
 #include "Global.h"
 #include "engine/Shader.h"
 #include "engine/ui/EngineUI.h"
 #include "engine/Model.h"
 #include "engine/components/EngineCamera.h"
+#include "engine/components/PointLight.h"
 
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height);
 void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double yPosIn);
 void scroll_callback([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] double xOffset, double yOffset);
 void processInput(GLFWwindow *window);
-void setLights(Shader);
+void setLights(Shader lightingShader, glm::vec3 firstPos, glm::vec3 ambient,glm::vec3 diffuse,glm::vec3 specular);
 
 // TODO: Make an input class and add these vars
 // camera
@@ -66,47 +65,11 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // build and compile our shader and model
-    Shader ourShader("../resources/shaders/default.vert", "../resources/shaders/default.frag");
-    Model ourModel("../resources/models/example/tower/wooden_watch_tower2.obj");
+    Shader ourShader("./resources/shaders/default.vert", "./resources/shaders/default.frag");
+    Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");
 
-
-
-    // Plane
-    unsigned int VBO, VAO, EBO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
-    glGenBuffers(1, &EBO);
-
-    glBindVertexArray(VAO);
-
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(v_plane_with_texture), v_plane_with_texture, GL_STATIC_DRAW);
-
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(plane_indices), plane_indices, GL_STATIC_DRAW);
-
-    // position attribute
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)nullptr);
-    glEnableVertexAttribArray(0);
-    // texture coord attribute
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-
-    // build and compile shader
-    Shader lightTextureShader;
-    lightTextureShader.VertexPath = "../resources/shaders/texture.vert";
-    lightTextureShader.FragmentPath = "../resources/shaders/texture.frag";
-    lightTextureShader.compile();
-
-    // Texture
-    unsigned int texture = TextureLoader::LoadTexture("../resources/textures/engine/lamp.png");
-
-    // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
-    lightTextureShader.use();
-    lightTextureShader.setInt("texture", 0);
-
-
-
+    // TODO: Handle multiple lights
+    PointLight pointLight;
 
     screenBuffer = new FrameBuffer(Window::SCR_WIDTH, Window::SCR_HEIGHT);
 
@@ -148,42 +111,12 @@ int main()
         ourModel.Draw(ourShader);
 
 
+        setLights(ourShader, pointLight.Position, pointLight.Ambient, pointLight.Diffuse, pointLight.Specular);
+        // TODO: Handle multiple lights
+        pointLight.HandleLight();
 
 
-        setLights(ourShader);
-
-        // bind textures on corresponding texture units
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture);
-
-        // activate shader
-        lightTextureShader.use();
-
-        // create transformations
-        //model         = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
-        //view          = glm::mat4(1.0f);
-        //projection    = glm::mat4(1.0f);
-        glm::vec3 pos = glm::vec3(5.0f, 2.5f, 5.0f);
-        model = glm::inverse(glm::lookAt(pos, EngineCamera::Position, EngineCamera::Up));
-
-        view = EngineCamera::GetViewMatrix();
-        projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)Window::SCR_WIDTH / (float)Window::SCR_HEIGHT, 0.1f, 1000.0f);
-        // retrieve the matrix uniform locations
-        GLint modelLoc = glGetUniformLocation(lightTextureShader.ID, "model");
-        GLint viewLoc  = glGetUniformLocation(lightTextureShader.ID, "view");
-        // pass them to the shaders (3 different ways)
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
-        // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
-        lightTextureShader.setMat4("projection", projection);
-
-        // render container
-        glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
-
-
-
-
+        // Scene texture frame buffer
         // now bind back to default framebuffer and draw a quad plane with the attached framebuffer color texture
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
         glDisable(GL_DEPTH_TEST); // disable depth test so screen-space quad isn't discarded due to depth test.
@@ -199,9 +132,7 @@ int main()
     }
 
     EngineUI::Shutdown();
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
-    glDeleteBuffers(1, &EBO);
+    pointLight.DeallocateLight();
 
     // glfw: terminate, clearing all previously allocated GLFW resources.
     glfwTerminate();
@@ -285,7 +216,7 @@ void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, i
 }
 
 // set light attributes
-void setLights(Shader lightingShader)
+void setLights(Shader lightingShader, glm::vec3 firstPos, glm::vec3 ambient,glm::vec3 diffuse,glm::vec3 specular)
 {
     /*
    Here we set all the uniforms for the 5/6 types of lights we have. We have to set them manually and index
@@ -293,19 +224,36 @@ void setLights(Shader lightingShader)
    by defining light types as classes and set their values in there, or by using a more efficient uniform approach
    by using 'Uniform buffer objects', but that is something we'll discuss in the 'Advanced GLSL' tutorial.
 */
+    glm::vec3 pointLightPositions[] = {
+            glm::vec3( 0.7f,  0.2f,  2.0f),
+            glm::vec3( 2.3f, -3.3f, -4.0f),
+            glm::vec3(-4.0f,  2.0f, -12.0f),
+            glm::vec3( 0.0f,  0.0f, -3.0f)
+    };
+
     // directional light
     lightingShader.setVec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
     lightingShader.setVec3("dirLight.ambient", 0.05f, 0.05f, 0.05f);
     lightingShader.setVec3("dirLight.diffuse", 0.4f, 0.4f, 0.4f);
     lightingShader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
+    // // directional light horor
+    // lightingShader.setVec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
+    // lightingShader.setVec3("dirLight.ambient", 0.3f, 0.24f, 0.14f);
+    // lightingShader.setVec3("dirLight.diffuse",  0.7f, 0.42f, 0.26f);
+    // lightingShader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
+    
+
+    // 1. Get point light in list
+    // 2. Set number of point lights to shader
+
     // point light 1
-    lightingShader.setVec3("pointLights[0].position", pointLightPositions[0]);
-    lightingShader.setVec3("pointLights[0].ambient", 0.05f, 0.05f, 0.05f);
-    lightingShader.setVec3("pointLights[0].diffuse", 0.8f, 0.8f, 0.8f);
-    lightingShader.setVec3("pointLights[0].specular", 1.0f, 1.0f, 1.0f);
+    lightingShader.setVec3("pointLights[0].position", firstPos);
+    lightingShader.setVec3("pointLights[0].ambient", ambient);
+    lightingShader.setVec3("pointLights[0].diffuse", diffuse);
+    lightingShader.setVec3("pointLights[0].specular", specular);
     lightingShader.setFloat("pointLights[0].constant", 1.0f);
-    lightingShader.setFloat("pointLights[0].linear", 0.09f);
-    lightingShader.setFloat("pointLights[0].quadratic", 0.032f);
+    lightingShader.setFloat("pointLights[0].linear", 0.7f);
+    lightingShader.setFloat("pointLights[0].quadratic", 1.8f);
     // point light 2
     lightingShader.setVec3("pointLights[1].position", pointLightPositions[1]);
     lightingShader.setVec3("pointLights[1].ambient", 0.05f, 0.05f, 0.05f);
@@ -330,6 +278,8 @@ void setLights(Shader lightingShader)
     lightingShader.setFloat("pointLights[3].constant", 1.0f);
     lightingShader.setFloat("pointLights[3].linear", 0.09f);
     lightingShader.setFloat("pointLights[3].quadratic", 0.032f);
+    
+    
     // spotLight
     lightingShader.setVec3("spotLight.position", EngineCamera::Position);
     lightingShader.setVec3("spotLight.direction", EngineCamera::Front);
