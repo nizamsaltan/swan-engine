@@ -4,7 +4,7 @@ project(SwanEngine)
 
 set( SOURCE
         "src/main.cpp"
-        src/cube_vertices.h src/engine/camera.h src/engine/ui/EngineUI.cpp src/engine/ui/EngineUI.h src/engine/ui/imgui_style.h src/engine/FrameBuffer.cpp src/engine/FrameBuffer.h src/engine/Mesh.h src/engine/Model.h src/engine/TextureLoader.cpp src/engine/TextureLoader.h)
+        src/cube_vertices.h src/engine/ui/EngineUI.cpp src/engine/ui/EngineUI.h src/engine/ui/imgui_style.h src/engine/FrameBuffer.cpp src/engine/FrameBuffer.h src/engine/Mesh.h src/engine/Model.h src/engine/TextureLoader.cpp src/engine/TextureLoader.h src/engine/EngineCamera.cpp src/engine/EngineCamera.h)
 
 set( LIB "lib/glad.c" )
 

@@ -84,6 +84,13 @@ build CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o: CXX_COMPILER__Sw
   OBJECT_DIR = CMakeFiles/SwanEngine.dir
   OBJECT_FILE_DIR = CMakeFiles/SwanEngine.dir/src/engine
 
+build CMakeFiles/SwanEngine.dir/src/engine/EngineCamera.cpp.o: CXX_COMPILER__SwanEngine_Debug /home/nizam/Documents/swan-engine/src/engine/EngineCamera.cpp || cmake_object_order_depends_target_SwanEngine
+  DEP_FILE = CMakeFiles/SwanEngine.dir/src/engine/EngineCamera.cpp.o.d
+  FLAGS = -g -Wall -fdiagnostics-color=always
+  INCLUDES = -I/home/nizam/Documents/swan-engine/include -I/home/nizam/Documents/swan-engine/include/assimp/include -I/home/nizam/Documents/swan-engine/include/assimp/code
+  OBJECT_DIR = CMakeFiles/SwanEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles/SwanEngine.dir/src/engine
+
 build CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o: CXX_COMPILER__SwanEngine_Debug /home/nizam/Documents/swan-engine/include/imgui/imgui.cpp || cmake_object_order_depends_target_SwanEngine
   DEP_FILE = CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o.d
   FLAGS = -g -Wall -fdiagnostics-color=always
@@ -141,7 +148,7 @@ build CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o:
 #############################################
 # Link the executable SwanEngine
 
-build SwanEngine: CXX_EXECUTABLE_LINKER__SwanEngine_Debug CMakeFiles/SwanEngine.dir/lib/glad.c.o CMakeFiles/SwanEngine.dir/src/main.cpp.o CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o
+build SwanEngine: CXX_EXECUTABLE_LINKER__SwanEngine_Debug CMakeFiles/SwanEngine.dir/lib/glad.c.o CMakeFiles/SwanEngine.dir/src/main.cpp.o CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o CMakeFiles/SwanEngine.dir/src/engine/EngineCamera.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o
   FLAGS = -g -Wall
   LINK_LIBRARIES = -Wl,-rpath,/home/nizam/Documents/swan-engine/include/assimp:/home/nizam/Documents/swan-engine/include/assimp/lib  -lGL  -ldl  -lglfw  -lassimp
   LINK_PATH = -L/home/nizam/Documents/swan-engine/include/assimp   -L/home/nizam/Documents/swan-engine/include/assimp/lib

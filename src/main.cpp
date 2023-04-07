@@ -10,8 +10,8 @@
 #include <iostream>
 #include "cube_vertices.h"
 #include "engine/ui/EngineUI.h"
-#include "engine/camera.h"
 #include "engine/Model.h"
+#include "engine/EngineCamera.h"
 
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height);
 void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double yPosIn);
@@ -24,7 +24,6 @@ const unsigned int SCR_WIDTH = 1280;
 const unsigned int SCR_HEIGHT = 720;
 
 // camera
-Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -138,8 +137,8 @@ int main()
         ourShader.use();
 
         // view/projection transformations
-        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 10000.0f);
-        glm::mat4 view = camera.GetViewMatrix();
+        glm::mat4 projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 10000.0f);
+        glm::mat4 view = EngineCamera::GetViewMatrix();
         ourShader.setMat4("projection", projection);
         ourShader.setMat4("view", view);
 
@@ -167,10 +166,10 @@ int main()
         //view          = glm::mat4(1.0f);
         //projection    = glm::mat4(1.0f);
         glm::vec3 pos = glm::vec3(5.0f, 2.5f, 5.0f);
-        model = glm::inverse(glm::lookAt(pos, camera.Position, camera.Up));
+        model = glm::inverse(glm::lookAt(pos, EngineCamera::Position, EngineCamera::Up));
 
-        view = camera.GetViewMatrix();
-        projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 1000.0f);
+        view = EngineCamera::GetViewMatrix();
+        projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 1000.0f);
         // retrieve the matrix uniform locations
         GLint modelLoc = glGetUniformLocation(lightTextureShader.ID, "model");
         GLint viewLoc  = glGetUniformLocation(lightTextureShader.ID, "view");
@@ -221,32 +220,32 @@ void processInput(GLFWwindow *window)
 
     // TODO: Handle camera input inside class itself
     if (EngineUI::isSceneWindowHover && glfwGetMouseButton(window, 1))
-        camera.method = FreeLook;
-    if (!glfwGetMouseButton(window, 1) && camera.method != None)
+        EngineCamera::method = FreeLook;
+    if (!glfwGetMouseButton(window, 1) && EngineCamera::method != None)
     {
         EngineUI::isSceneWindowHover = true;
-        camera.method = None;
+        EngineCamera::method = None;
     }
 
     bool speedUp = glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS;
     auto cameraSpeed = static_cast<float>(speedUp ? 6 : 2);
-    switch (camera.method)
+    switch (EngineCamera::method)
     {
         case FreeLook:
             glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-                camera.ProcessKeyboard(FORWARD, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(FORWARD, deltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-                camera.ProcessKeyboard(BACKWARD, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(BACKWARD, deltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-                camera.ProcessKeyboard(LEFT, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(LEFT, deltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-                camera.ProcessKeyboard(RIGHT, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(RIGHT, deltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
-                camera.ProcessKeyboard(UP, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(UP, deltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
-                camera.ProcessKeyboard(DOWN, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(DOWN, deltaTime * cameraSpeed);
             break;
         case None:
             glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
@@ -275,8 +274,8 @@ void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double y
 
     // TODO: only designed for one movement method
     // TODO: Handle camera input inside class itself
-    if (camera.method == FreeLook)
-        camera.ProcessMouseMovement(xOffset, yOffset);
+    if (EngineCamera::method == FreeLook)
+        EngineCamera::ProcessMouseMovement(xOffset, yOffset);
 }
 
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called
@@ -284,8 +283,8 @@ void scroll_callback([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] doubl
 {
     // TODO: only designed for one movement method
     // TODO: Handle camera input inside class itself
-    if (camera.method == FreeLook)
-        camera.ProcessMouseScroll(static_cast<float>(yOffset));
+    if (EngineCamera::method == FreeLook)
+        EngineCamera::ProcessMouseScroll(static_cast<float>(yOffset));
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
@@ -341,8 +340,8 @@ void setLights(Shader lightingShader)
     lightingShader.setFloat("pointLights[3].linear", 0.09f);
     lightingShader.setFloat("pointLights[3].quadratic", 0.032f);
     // spotLight
-    lightingShader.setVec3("spotLight.position", camera.Position);
-    lightingShader.setVec3("spotLight.direction", camera.Front);
+    lightingShader.setVec3("spotLight.position", EngineCamera::Position);
+    lightingShader.setVec3("spotLight.direction", EngineCamera::Front);
     lightingShader.setVec3("spotLight.ambient", 0.0f, 0.0f, 0.0f);
     lightingShader.setVec3("spotLight.diffuse", 1.0f, 1.0f, 1.0f);
     lightingShader.setVec3("spotLight.specular", 1.0f, 1.0f, 1.0f);

@@ -21,73 +21,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b68bd90-9538-48ff-8814-c2b7b159a589" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/fonts/DM-Mono/DMMono-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/DM-Mono/DMMono-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/DM-Mono/DMMono-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/DM-Mono/DMMono-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/DM-Mono/DMMono-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/DM-Mono/DMMono-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/Inter/Inter-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/shaders/texture.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/shaders/texture.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/textures/engine/attr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/textures/engine/lamp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/TextureLoader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/TextureLoader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/EngineCamera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/EngineCamera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/3.26.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/3.26.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/3.26.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/3.26.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/3.26.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/3.26.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/3.26.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/compiler_depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/SwanEngine.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/SwanEngine" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f8024f9dfaac0de82062.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-07T11-01-22-0078.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-SwanEngine-Debug-9f35e9034d93605974f8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/shaders/default.frag" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shaders/default.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/shaders/default.vert" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shaders/default.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/shaders/model_loading.frag" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shaders/model_loading.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/shaders/model_loading.vert" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shaders/model_loading.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cube_vertices.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cube_vertices.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Mesh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Model.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/ui/EngineUI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/ui/EngineUI.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/camera.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,6 +82,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -150,6 +102,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -162,6 +119,9 @@
       <workItem from="1680864061967" duration="1047000" />
       <workItem from="1680865137872" duration="751000" />
       <workItem from="1680866020346" duration="859000" />
+      <workItem from="1680867150284" duration="209000" />
+      <workItem from="1680873698573" duration="1211000" />
+      <workItem from="1680881290870" duration="2010000" />
     </task>
     <servers />
   </component>
@@ -173,5 +133,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
