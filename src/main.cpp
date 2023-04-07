@@ -5,13 +5,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "engine/Shader.h"
-
 #include <iostream>
 #include "cube_vertices.h"
+#include "Global.h"
+#include "engine/Shader.h"
 #include "engine/ui/EngineUI.h"
 #include "engine/Model.h"
-#include "engine/EngineCamera.h"
+#include "engine/components/EngineCamera.h"
 
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height);
 void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double yPosIn);
@@ -19,18 +19,10 @@ void scroll_callback([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] doubl
 void processInput(GLFWwindow *window);
 void setLights(Shader);
 
-// settings
-const unsigned int SCR_WIDTH = 1280;
-const unsigned int SCR_HEIGHT = 720;
-
+// TODO: Make an input class and add these vars
 // camera
-float lastX = SCR_WIDTH / 2.0f;
-float lastY = SCR_HEIGHT / 2.0f;
-bool firstMouse = true;
-
-// timing
-float deltaTime = 0.0f;	// time between current frame and last frame
-float lastFrame = 0.0f;
+float lastX = Window::SCR_WIDTH / 2.0f;
+float lastY = Window::SCR_HEIGHT / 2.0f;
 
 FrameBuffer* screenBuffer;
 
@@ -49,7 +41,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Swan Engine", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(Window::SCR_WIDTH, Window::SCR_HEIGHT, "Swan Engine", nullptr, nullptr);
     if (window == nullptr)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -74,18 +66,9 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // build and compile our shader and model
-    //Shader lightTextureShader("../resources/shaders/texture.vert", "../resources/shaders/texture.frag");
-    Shader lightTextureShader;
-    lightTextureShader.VertexPath = "../resources/shaders/texture.vert";
-    lightTextureShader.FragmentPath = "../resources/shaders/texture.frag";
-    lightTextureShader.compile();
-
     Shader ourShader("../resources/shaders/default.vert", "../resources/shaders/default.frag");
-    //Shader ourShader;
-    //ourShader.VertexPath = "../resources/shaders/default.vert";
-    //ourShader.FragmentPath = "../resources/shaders/default.frag";
-    //ourShader.compile();
     Model ourModel("../resources/models/example/tower/wooden_watch_tower2.obj");
+
 
 
     // Plane
@@ -109,6 +92,12 @@ int main()
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
+    // build and compile shader
+    Shader lightTextureShader;
+    lightTextureShader.VertexPath = "../resources/shaders/texture.vert";
+    lightTextureShader.FragmentPath = "../resources/shaders/texture.frag";
+    lightTextureShader.compile();
+
     // Texture
     unsigned int texture = TextureLoader::LoadTexture("../resources/textures/engine/lamp.png");
 
@@ -119,7 +108,7 @@ int main()
 
 
 
-    screenBuffer = new FrameBuffer(SCR_WIDTH, SCR_HEIGHT);
+    screenBuffer = new FrameBuffer(Window::SCR_WIDTH, Window::SCR_HEIGHT);
 
     // render loop
     // -----------
@@ -127,8 +116,8 @@ int main()
     {
         // per-frame time logic
         auto currentFrame = static_cast<float>(glfwGetTime());
-        deltaTime = currentFrame - lastFrame;
-        lastFrame = currentFrame;
+        Time::DeltaTime = currentFrame - Time::LastFrame;
+        Time::LastFrame = currentFrame;
 
         // input
         processInput(window);
@@ -146,7 +135,7 @@ int main()
         ourShader.use();
 
         // view/projection transformations
-        glm::mat4 projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 10000.0f);
+        glm::mat4 projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)Window::SCR_WIDTH / (float)Window::SCR_HEIGHT, 0.1f, 10000.0f);
         glm::mat4 view = EngineCamera::GetViewMatrix();
         ourShader.setMat4("projection", projection);
         ourShader.setMat4("view", view);
@@ -178,7 +167,7 @@ int main()
         model = glm::inverse(glm::lookAt(pos, EngineCamera::Position, EngineCamera::Up));
 
         view = EngineCamera::GetViewMatrix();
-        projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 1000.0f);
+        projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)Window::SCR_WIDTH / (float)Window::SCR_HEIGHT, 0.1f, 1000.0f);
         // retrieve the matrix uniform locations
         GLint modelLoc = glGetUniformLocation(lightTextureShader.ID, "model");
         GLint viewLoc  = glGetUniformLocation(lightTextureShader.ID, "view");
@@ -199,7 +188,7 @@ int main()
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
         glDisable(GL_DEPTH_TEST); // disable depth test so screen-space quad isn't discarded due to depth test.
         // clear all relevant buffers
-        glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // set clear color to white (not really necessary actually, since we won't be able to see behind the quad anyways)
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // set clear color to black (not really necessary actually, since we won't be able to see behind the quad anyways)
         glClear(GL_COLOR_BUFFER_BIT);
 
         EngineUI::PostRender();
@@ -244,17 +233,17 @@ void processInput(GLFWwindow *window)
             glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-                EngineCamera::ProcessKeyboard(FORWARD, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(FORWARD, Time::DeltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-                EngineCamera::ProcessKeyboard(BACKWARD, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(BACKWARD, Time::DeltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-                EngineCamera::ProcessKeyboard(LEFT, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(LEFT, Time::DeltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-                EngineCamera::ProcessKeyboard(RIGHT, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(RIGHT, Time::DeltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
-                EngineCamera::ProcessKeyboard(UP, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(UP, Time::DeltaTime * cameraSpeed);
             if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
-                EngineCamera::ProcessKeyboard(DOWN, deltaTime * cameraSpeed);
+                EngineCamera::ProcessKeyboard(DOWN, Time::DeltaTime * cameraSpeed);
             break;
         case None:
             glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
@@ -268,15 +257,8 @@ void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double y
     auto xPos = static_cast<float>(xPosIn);
     auto yPos = static_cast<float>(yPosIn);
 
-    if (firstMouse)
-    {
-        lastX = xPos;
-        lastY = yPos;
-        firstMouse = false;
-    }
-
-    float xOffset = xPos - lastX;
-    float yOffset = lastY - yPos; // reversed since y-coordinates go from bottom to top
+    float xDelta = xPos - lastX;
+    float yDelta = lastY - yPos; // reversed since y-coordinates go from bottom to top
 
     lastX = xPos;
     lastY = yPos;
@@ -284,7 +266,7 @@ void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double y
     // TODO: only designed for one movement method
     // TODO: Handle camera input inside class itself
     if (EngineCamera::method == FreeLook)
-        EngineCamera::ProcessMouseMovement(xOffset, yOffset);
+        EngineCamera::ProcessMouseMovement(xDelta, yDelta);
 }
 
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called

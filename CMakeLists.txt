@@ -3,8 +3,23 @@ cmake_minimum_required(VERSION 3.16.3)
 project(SwanEngine)
 
 set( SOURCE
-        "src/main.cpp"
-        src/cube_vertices.h src/engine/ui/EngineUI.cpp src/engine/ui/EngineUI.h src/engine/ui/imgui_style.h src/engine/FrameBuffer.cpp src/engine/FrameBuffer.h src/engine/Mesh.h src/engine/Model.h src/engine/TextureLoader.cpp src/engine/TextureLoader.h src/engine/EngineCamera.cpp src/engine/EngineCamera.h)
+        src/main.cpp
+        src/Global.h
+        src/cube_vertices.h
+        src/engine/FrameBuffer.cpp
+        src/engine/FrameBuffer.h
+        src/engine/Mesh.h
+        src/engine/Model.h
+        src/engine/TextureLoader.cpp
+        src/engine/TextureLoader.h
+        src/engine/ui/EngineUI.cpp
+        src/engine/ui/EngineUI.h
+        src/engine/ui/imgui_style.h
+        src/engine/components/EngineCamera.cpp
+        src/engine/components/EngineCamera.h
+        src/engine/components/PointLight.cpp
+        src/engine/components/PointLight.h
+)
 
 set( LIB "lib/glad.c" )
 
