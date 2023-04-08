@@ -32,6 +32,7 @@ public:
         float quadratic);
 
     void HandleLight();
+    void SetBasicColor(glm::vec3 color, float ambientForce);
     void DeallocateLight();
 private:
     void Compile();

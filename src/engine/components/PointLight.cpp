@@ -67,6 +67,13 @@ void PointLight::HandleLight()
     // Handle light shader
 }
 
+void PointLight::SetBasicColor(glm::vec3 color, float ambientForce) 
+{
+    Ambient = color * ambientForce;
+    Diffuse = color;
+    Specular = color;
+}
+
 void PointLight::DeallocateLight() 
 {
     glDeleteVertexArrays(1, &VAO);
