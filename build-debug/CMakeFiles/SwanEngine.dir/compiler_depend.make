@@ -2043,13 +2043,20 @@ CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o: src/engine/c
   include/glm/detail/func_integer.inl \
   include/glad/glad.h \
   include/KHR/khrplatform.h \
-  include/glm/ext/matrix_transform.hpp \
+  include/glm/gtc/matrix_transform.hpp \
+  include/glm/ext/matrix_projection.hpp \
   include/glm/gtc/constants.hpp \
   include/glm/ext/scalar_constants.hpp \
   include/glm/detail/setup.hpp \
   include/glm/ext/scalar_constants.inl \
   include/glm/gtc/constants.inl \
-  include/glm/ext/matrix_transform.inl
+  include/glm/ext/matrix_projection.inl \
+  include/glm/ext/matrix_clip_space.hpp \
+  include/glm/ext/matrix_clip_space.inl \
+  include/glm/ext/matrix_transform.hpp \
+  include/glm/ext/matrix_transform.inl \
+  include/glm/gtc/matrix_transform.inl \
+  src/Global.h
 
 CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o: src/engine/components/PointLight.cpp \
   /usr/include/stdc-predef.h \
@@ -3790,6 +3797,8 @@ src/engine/ui/EngineUI.cpp:
 
 src/cube_vertices.h:
 
+include/glm/gtc/type_ptr.inl:
+
 /usr/include/bits/floatn-common.h:
 
 include/glm/gtc/matrix_transform.hpp:
@@ -4318,13 +4327,7 @@ include/glm/ext/vector_float4_precision.hpp:
 
 /usr/include/bits/stdio_lim.h:
 
-src/Global.h:
-
-/usr/include/c++/12.2.1/fstream:
-
 /usr/include/bits/atomic_wide_counter.h:
-
-include/glm/gtc/type_ptr.inl:
 
 /usr/include/bits/types/time_t.h:
 
@@ -4856,15 +4859,27 @@ src/engine/TextureLoader.h:
 
 src/engine/components/EngineCamera.h:
 
+include/glm/vec2.hpp:
+
+/usr/include/c++/12.2.1/tr1/ell_integral.tcc:
+
+include/glm/ext/matrix_projection.hpp:
+
 include/glm/gtc/constants.hpp:
 
 include/glm/ext/scalar_constants.hpp:
+
+include/glm/ext/matrix_clip_space.inl:
 
 /usr/include/bits/types/error_t.h:
 
 include/glm/ext/matrix_transform.inl:
 
 include/glm/ext/vector_float1.hpp:
+
+/usr/include/c++/12.2.1/fstream:
+
+src/Global.h:
 
 src/engine/components/PointLight.cpp:
 
@@ -4879,14 +4894,6 @@ include/glm/ext/quaternion_relational.inl:
 /usr/include/c++/12.2.1/bits/fstream.tcc:
 
 /usr/include/c++/12.2.1/bits/sstream.tcc:
-
-include/glm/vec2.hpp:
-
-/usr/include/c++/12.2.1/tr1/ell_integral.tcc:
-
-include/glm/ext/matrix_projection.hpp:
-
-include/glm/ext/matrix_clip_space.inl:
 
 include/imgui/imstb_truetype.h:
 

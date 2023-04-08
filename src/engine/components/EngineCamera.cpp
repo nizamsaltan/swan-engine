@@ -3,7 +3,8 @@
 //
 
 #include "EngineCamera.h"
-#include <glm/ext/matrix_transform.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include "../../Global.h"
 
 
 CameraMovementMethod EngineCamera::method;
@@ -20,10 +21,30 @@ float EngineCamera::Pitch = 0.0f;
 float EngineCamera::MovementSpeed = 2.5f;
 float EngineCamera::MouseSensitivity = 0.1f;
 float EngineCamera::Zoom = 45.0f;
+float EngineCamera::NearClip = 0.1f;
+float EngineCamera::FarClip = 1000.0f;
 
 glm::mat4 EngineCamera::GetViewMatrix()
 {
     return glm::lookAt(Position, Position + Front, Up);
+}
+
+glm::mat4 EngineCamera::GetProjectionMatrix()
+{
+    return getPerspective(Zoom);
+}
+
+glm::mat4 EngineCamera::GetProjectionMatrix(bool calculateFov)
+{
+    if (calculateFov)
+        return getPerspective(Zoom);
+    else 
+        return getPerspective(45.0f); // TODO: Make generic default fov
+}
+
+glm::mat4 EngineCamera::getPerspective(float fov) 
+{
+    return glm::perspective(glm::radians(fov), (float)Window::SCR_WIDTH / (float)Window::SCR_HEIGHT, NearClip, FarClip);
 }
 
 void EngineCamera::ProcessKeyboard(CameraMovementDirection direction, float speed)

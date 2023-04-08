@@ -23,7 +23,7 @@ void Skybox::HandleSkybox()
     glDepthFunc(GL_LEQUAL);  // change depth function so depth test passes when values are equal to depth buffer's content
     SkyboxShader.use();
     glm::mat4 view = glm::mat4(glm::mat3(EngineCamera::GetViewMatrix())); // remove translation from the view matrix
-    glm::mat4 projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)Window::SCR_WIDTH / (float)Window::SCR_HEIGHT, 0.1f, 10000.0f);
+    glm::mat4 projection = EngineCamera::GetProjectionMatrix(false);
     SkyboxShader.setMat4("view", view);
     SkyboxShader.setMat4("projection", projection);
     // skybox cube

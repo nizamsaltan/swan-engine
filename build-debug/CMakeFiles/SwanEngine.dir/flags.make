@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/nizam/Documents/swan-engine/include -I/home/nizam/Documents/swan-engine/include/assimp/include -I/home/nizam/Documents/swan-engine/include/assimp/code
+C_INCLUDES = -I/home/nizam/Documents/GitHub/swan-engine/include -I/home/nizam/Documents/GitHub/swan-engine/include/assimp/include -I/home/nizam/Documents/GitHub/swan-engine/include/assimp/code
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nizam/Documents/swan-engine/include -I/home/nizam/Documents/swan-engine/include/assimp/include -I/home/nizam/Documents/swan-engine/include/assimp/code
+CXX_INCLUDES = -I/home/nizam/Documents/GitHub/swan-engine/include -I/home/nizam/Documents/GitHub/swan-engine/include/assimp/include -I/home/nizam/Documents/GitHub/swan-engine/include/assimp/code
 
 CXX_FLAGS = 
 

@@ -109,7 +109,7 @@ int main()
         ourShader.use();
 
         // view/projection transformations
-        glm::mat4 projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)Window::SCR_WIDTH / (float)Window::SCR_HEIGHT, 0.1f, 10000.0f);
+        glm::mat4 projection = EngineCamera::GetProjectionMatrix();
         glm::mat4 view = EngineCamera::GetViewMatrix();
         ourShader.setMat4("projection", projection);
         ourShader.setMat4("view", view);
@@ -228,6 +228,8 @@ void scroll_callback([[maybe_unused]] GLFWwindow* window, [[maybe_unused]] doubl
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height)
 {
+    Window::SCR_WIDTH = width;
+    Window::SCR_HEIGHT = height;
     glViewport(0, 0, width, height);
 }
 

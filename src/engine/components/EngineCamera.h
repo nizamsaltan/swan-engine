@@ -39,13 +39,18 @@ public:
     static float MovementSpeed;
     static float MouseSensitivity;
     static float Zoom;
+    static float NearClip;
+    static float FarClip;
 
     static glm::mat4 GetViewMatrix();
+    static glm::mat4 GetProjectionMatrix();
+    static glm::mat4 GetProjectionMatrix(bool calculateFov);
     static void ProcessKeyboard(CameraMovementDirection direction, float speed);
     static void ProcessMouseMovement(float xOffset, float yOffset, GLboolean constrainPitch = true);
     static void ProcessMouseScroll(float yOffset);
 
 private:
+    static glm::mat4 getPerspective(float fov);
     // calculates the front vector from the Camera's (updated) Euler Angles
     static void updateCameraVectors()
     {

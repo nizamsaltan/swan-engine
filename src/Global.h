@@ -2,8 +2,8 @@
 
 namespace Window
 {
-    inline const unsigned int SCR_WIDTH = 1280;
-    inline const unsigned int SCR_HEIGHT = 720;
+    inline unsigned int SCR_WIDTH = 1280;
+    inline unsigned int SCR_HEIGHT = 720;
 }
 
 namespace Time

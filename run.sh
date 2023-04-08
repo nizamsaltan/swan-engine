@@ -6,7 +6,7 @@ fi
 mv build-debug/* .
 
 # Build
-cmake ./CMakeList.txt
+cmake ./CMakeLists.txt
 make
 
 ./SwanEngine # &

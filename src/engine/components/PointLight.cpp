@@ -50,7 +50,7 @@ void PointLight::HandleLight()
 
     // create transformations
     glm::mat4 model = glm::inverse(glm::lookAt(Position, EngineCamera::Position, EngineCamera::Up));    glm::mat4 view = EngineCamera::GetViewMatrix();
-    glm::mat4 projection = glm::perspective(glm::radians(EngineCamera::Zoom), (float)Window::SCR_WIDTH / (float)Window::SCR_HEIGHT, 0.1f, 1000.0f);
+    glm::mat4 projection = EngineCamera::GetProjectionMatrix();
     // retrieve the matrix uniform locations
     GLint modelLoc = glGetUniformLocation(textureShader.ID, "model");
     GLint viewLoc  = glGetUniformLocation(textureShader.ID, "view");

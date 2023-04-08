@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizam/Documents/swan-engine
+CMAKE_SOURCE_DIR = /home/nizam/Documents/GitHub/swan-engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizam/Documents/swan-engine
+CMAKE_BINARY_DIR = /home/nizam/Documents/GitHub/swan-engine
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SwanEngine.dir/depend.make
@@ -72,212 +72,212 @@ include CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/lib/glad.c.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/lib/glad.c.o: lib/glad.c
 CMakeFiles/SwanEngine.dir/lib/glad.c.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SwanEngine.dir/lib/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/lib/glad.c.o -MF CMakeFiles/SwanEngine.dir/lib/glad.c.o.d -o CMakeFiles/SwanEngine.dir/lib/glad.c.o -c /home/nizam/Documents/swan-engine/lib/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SwanEngine.dir/lib/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/lib/glad.c.o -MF CMakeFiles/SwanEngine.dir/lib/glad.c.o.d -o CMakeFiles/SwanEngine.dir/lib/glad.c.o -c /home/nizam/Documents/GitHub/swan-engine/lib/glad.c
 
 CMakeFiles/SwanEngine.dir/lib/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SwanEngine.dir/lib/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nizam/Documents/swan-engine/lib/glad.c > CMakeFiles/SwanEngine.dir/lib/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/lib/glad.c > CMakeFiles/SwanEngine.dir/lib/glad.c.i
 
 CMakeFiles/SwanEngine.dir/lib/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SwanEngine.dir/lib/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nizam/Documents/swan-engine/lib/glad.c -o CMakeFiles/SwanEngine.dir/lib/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/lib/glad.c -o CMakeFiles/SwanEngine.dir/lib/glad.c.s
 
 CMakeFiles/SwanEngine.dir/src/main.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/SwanEngine.dir/src/main.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SwanEngine.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/main.cpp.o -MF CMakeFiles/SwanEngine.dir/src/main.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/main.cpp.o -c /home/nizam/Documents/swan-engine/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SwanEngine.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/main.cpp.o -MF CMakeFiles/SwanEngine.dir/src/main.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/main.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/src/main.cpp
 
 CMakeFiles/SwanEngine.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/src/main.cpp > CMakeFiles/SwanEngine.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/src/main.cpp > CMakeFiles/SwanEngine.dir/src/main.cpp.i
 
 CMakeFiles/SwanEngine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/src/main.cpp -o CMakeFiles/SwanEngine.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/src/main.cpp -o CMakeFiles/SwanEngine.dir/src/main.cpp.s
 
 CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o: src/engine/FrameBuffer.cpp
 CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o -c /home/nizam/Documents/swan-engine/src/engine/FrameBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/src/engine/FrameBuffer.cpp
 
 CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/src/engine/FrameBuffer.cpp > CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/src/engine/FrameBuffer.cpp > CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.i
 
 CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/src/engine/FrameBuffer.cpp -o CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/src/engine/FrameBuffer.cpp -o CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.s
 
 CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o: src/engine/TextureLoader.cpp
 CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o -c /home/nizam/Documents/swan-engine/src/engine/TextureLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/src/engine/TextureLoader.cpp
 
 CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/src/engine/TextureLoader.cpp > CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/src/engine/TextureLoader.cpp > CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.i
 
 CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/src/engine/TextureLoader.cpp -o CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/src/engine/TextureLoader.cpp -o CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.s
 
 CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o: src/engine/ui/EngineUI.cpp
 CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o -c /home/nizam/Documents/swan-engine/src/engine/ui/EngineUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/src/engine/ui/EngineUI.cpp
 
 CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/src/engine/ui/EngineUI.cpp > CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/src/engine/ui/EngineUI.cpp > CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.i
 
 CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/src/engine/ui/EngineUI.cpp -o CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/src/engine/ui/EngineUI.cpp -o CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.s
 
 CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o: src/engine/components/EngineCamera.cpp
 CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o -c /home/nizam/Documents/swan-engine/src/engine/components/EngineCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/src/engine/components/EngineCamera.cpp
 
 CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/src/engine/components/EngineCamera.cpp > CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/src/engine/components/EngineCamera.cpp > CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.i
 
 CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/src/engine/components/EngineCamera.cpp -o CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/src/engine/components/EngineCamera.cpp -o CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.s
 
 CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o: src/engine/components/PointLight.cpp
 CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o -c /home/nizam/Documents/swan-engine/src/engine/components/PointLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/src/engine/components/PointLight.cpp
 
 CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/src/engine/components/PointLight.cpp > CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/src/engine/components/PointLight.cpp > CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.i
 
 CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/src/engine/components/PointLight.cpp -o CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/src/engine/components/PointLight.cpp -o CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.s
 
 CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o: src/engine/components/Skybox.cpp
 CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o -c /home/nizam/Documents/swan-engine/src/engine/components/Skybox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o -MF CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o.d -o CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/src/engine/components/Skybox.cpp
 
 CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/src/engine/components/Skybox.cpp > CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/src/engine/components/Skybox.cpp > CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.i
 
 CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/src/engine/components/Skybox.cpp -o CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/src/engine/components/Skybox.cpp -o CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.s
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o: include/imgui/imgui.cpp
 CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o -c /home/nizam/Documents/swan-engine/include/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui.cpp
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/include/imgui/imgui.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.i
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/include/imgui/imgui.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui.cpp.s
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o: include/imgui/imgui_demo.cpp
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o -c /home/nizam/Documents/swan-engine/include/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_demo.cpp
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/include/imgui/imgui_demo.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_demo.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.i
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/include/imgui/imgui_demo.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_demo.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_demo.cpp.s
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o: include/imgui/imgui_draw.cpp
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o -c /home/nizam/Documents/swan-engine/include/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_draw.cpp
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/include/imgui/imgui_draw.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_draw.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.i
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/include/imgui/imgui_draw.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_draw.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_draw.cpp.s
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o: include/imgui/imgui_tables.cpp
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o -c /home/nizam/Documents/swan-engine/include/imgui/imgui_tables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_tables.cpp
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/include/imgui/imgui_tables.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_tables.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.i
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/include/imgui/imgui_tables.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_tables.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.s
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o: include/imgui/imgui_widgets.cpp
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o -c /home/nizam/Documents/swan-engine/include/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_widgets.cpp
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/include/imgui/imgui_widgets.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_widgets.cpp > CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.i
 
 CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/include/imgui/imgui_widgets.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_widgets.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o: include/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o -c /home/nizam/Documents/swan-engine/include/imgui/backends/imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/include/imgui/backends/imgui_impl_glfw.cpp
 
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/include/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/include/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.i
 
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/include/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/include/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp.s
 
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/SwanEngine.dir/flags.make
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o: include/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/SwanEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/nizam/Documents/swan-engine/include/imgui/backends/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/nizam/Documents/GitHub/swan-engine/include/imgui/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/swan-engine/include/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizam/Documents/GitHub/swan-engine/include/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/swan-engine/include/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizam/Documents/GitHub/swan-engine/include/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.s
 
 # Object files for target SwanEngine
 SwanEngine_OBJECTS = \
@@ -317,7 +317,7 @@ SwanEngine: CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_glfw.cpp
 SwanEngine: CMakeFiles/SwanEngine.dir/include/imgui/backends/imgui_impl_opengl3.cpp.o
 SwanEngine: CMakeFiles/SwanEngine.dir/build.make
 SwanEngine: CMakeFiles/SwanEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nizam/Documents/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SwanEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SwanEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SwanEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -329,6 +329,6 @@ CMakeFiles/SwanEngine.dir/clean:
 .PHONY : CMakeFiles/SwanEngine.dir/clean
 
 CMakeFiles/SwanEngine.dir/depend:
-	cd /home/nizam/Documents/swan-engine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizam/Documents/swan-engine /home/nizam/Documents/swan-engine /home/nizam/Documents/swan-engine /home/nizam/Documents/swan-engine /home/nizam/Documents/swan-engine/CMakeFiles/SwanEngine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nizam/Documents/GitHub/swan-engine && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizam/Documents/GitHub/swan-engine /home/nizam/Documents/GitHub/swan-engine /home/nizam/Documents/GitHub/swan-engine /home/nizam/Documents/GitHub/swan-engine /home/nizam/Documents/GitHub/swan-engine/CMakeFiles/SwanEngine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SwanEngine.dir/depend
 
