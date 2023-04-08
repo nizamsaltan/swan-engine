@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o.d"
   "CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o"
   "CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o.d"
+  "CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o"
+  "CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o.d"
   "CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o"
   "CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o.d"
   "CMakeFiles/SwanEngine.dir/src/main.cpp.o"

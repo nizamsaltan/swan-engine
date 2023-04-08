@@ -15,3 +15,7 @@ Swan Engine is 3D graphics engine written in C++ using OpenGL. This engine speci
 - [Glm](https://github.com/g-truc/glm) -> Math library
 - [Assimp](https://github.com/assimp/assimp) -> Model importer
 - [STB](https://github.com/nothings/stb/blob/master/stb_image.h) -> Image loader
+
+### TODO
+- Improve Mesh class (use shaders indside of Mesh class and handle render methods etc.)
+- Improve default shader (add user defined light sources etc.)

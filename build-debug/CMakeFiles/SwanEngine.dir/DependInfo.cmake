@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nizam/Documents/swan-engine/src/engine/TextureLoader.cpp" "CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o.d"
   "/home/nizam/Documents/swan-engine/src/engine/components/EngineCamera.cpp" "CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o.d"
   "/home/nizam/Documents/swan-engine/src/engine/components/PointLight.cpp" "CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o.d"
+  "/home/nizam/Documents/swan-engine/src/engine/components/Skybox.cpp" "CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o.d"
   "/home/nizam/Documents/swan-engine/src/engine/ui/EngineUI.cpp" "CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/ui/EngineUI.cpp.o.d"
   "/home/nizam/Documents/swan-engine/src/main.cpp" "CMakeFiles/SwanEngine.dir/src/main.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/main.cpp.o.d"
   )

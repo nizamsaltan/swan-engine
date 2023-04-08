@@ -19,6 +19,8 @@ set( SOURCE
         src/engine/components/EngineCamera.h
         src/engine/components/PointLight.cpp
         src/engine/components/PointLight.h
+        src/engine/components/Skybox.cpp
+        src/engine/components/Skybox.h
 )
 
 set( LIB "lib/glad.c" )

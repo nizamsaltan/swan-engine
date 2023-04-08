@@ -12,6 +12,7 @@
 #include "engine/Model.h"
 #include "engine/components/EngineCamera.h"
 #include "engine/components/PointLight.h"
+#include "engine/components/Skybox.h"
 
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height);
 void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double yPosIn);
@@ -25,7 +26,6 @@ float lastX = Window::SCR_WIDTH / 2.0f;
 float lastY = Window::SCR_HEIGHT / 2.0f;
 
 FrameBuffer* screenBuffer;
-
 
 std::vector<PointLight> pointLights;
 
@@ -73,13 +73,14 @@ int main()
     Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");
 
     // Have 4 point lights in code
-    for (size_t i = 0; i < 4; i++)
+    for (size_t i = 0; i < 2; i++)
     {
         PointLight pointLight;
-        pointLight.Position = glm::vec3(i * 2, 0.0f, i * 2);
         pointLights.push_back(pointLight);
     }
-    
+
+
+    Skybox skybox;
 
     screenBuffer = new FrameBuffer(Window::SCR_WIDTH, Window::SCR_HEIGHT);
 
@@ -120,13 +121,13 @@ int main()
         ourShader.setMat4("model", model);
         ourModel.Draw(ourShader);
 
-
         setLights(ourShader);
-        // TODO: Handle multiple lights
-        //pointLight.HandleLight();
+        //TODO: Make other light types
         for (size_t i = 0; i < pointLights.size(); i++)
             pointLights[i].HandleLight();
 
+        // Render skybox lastly
+        skybox.HandleSkybox();
 
         // Scene texture frame buffer
         // now bind back to default framebuffer and draw a quad plane with the attached framebuffer color texture
@@ -233,6 +234,7 @@ void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, i
 // set light attributes
 void setLights(Shader lightingShader)
 {
+    // TODO: Add this function to mesh class itself
     // directional light
     lightingShader.setVec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
     lightingShader.setVec3("dirLight.ambient", 0.05f, 0.05f, 0.05f);
@@ -243,6 +245,7 @@ void setLights(Shader lightingShader)
     // 2. Set number of point lights to shader
     
     pointLights[0].Position = glm::vec3(0.0f, 5.0f, 0.0f); // for debug purpose
+    pointLights[1].SetBasicColor(glm::vec3(0.0f, 0.0f, 1.0f), 1);
     for (int i = 0; i < pointLights.size(); i++)
     {
         std::string target = "pointLights[" + std::to_string(i) + "].";
@@ -256,8 +259,10 @@ void setLights(Shader lightingShader)
     }
 
     // spotLight
-    lightingShader.setVec3("spotLight.position", EngineCamera::Position);
-    lightingShader.setVec3("spotLight.direction", EngineCamera::Front);
+    //lightingShader.setVec3("spotLight.position", EngineCamera::Position);
+    //lightingShader.setVec3("spotLight.direction", EngineCamera::Front);
+    lightingShader.setVec3("spotLight.position", glm::vec3(0.0f));
+    lightingShader.setVec3("spotLight.direction", glm::vec3(0.0f));
     lightingShader.setVec3("spotLight.ambient", 0.0f, 0.0f, 0.0f);
     lightingShader.setVec3("spotLight.diffuse", 1.0f, 1.0f, 1.0f);
     lightingShader.setVec3("spotLight.specular", 1.0f, 1.0f, 1.0f);

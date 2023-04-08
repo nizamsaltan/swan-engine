@@ -417,6 +417,30 @@ src/engine/components/PointLight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.s
 .PHONY : src/engine/components/PointLight.cpp.s
 
+src/engine/components/Skybox.o: src/engine/components/Skybox.cpp.o
+.PHONY : src/engine/components/Skybox.o
+
+# target to build an object file
+src/engine/components/Skybox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.o
+.PHONY : src/engine/components/Skybox.cpp.o
+
+src/engine/components/Skybox.i: src/engine/components/Skybox.cpp.i
+.PHONY : src/engine/components/Skybox.i
+
+# target to preprocess a source file
+src/engine/components/Skybox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.i
+.PHONY : src/engine/components/Skybox.cpp.i
+
+src/engine/components/Skybox.s: src/engine/components/Skybox.cpp.s
+.PHONY : src/engine/components/Skybox.s
+
+# target to generate assembly for a file
+src/engine/components/Skybox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.s
+.PHONY : src/engine/components/Skybox.cpp.s
+
 src/engine/ui/EngineUI.o: src/engine/ui/EngineUI.cpp.o
 .PHONY : src/engine/ui/EngineUI.o
 
@@ -510,6 +534,9 @@ help:
 	@echo "... src/engine/components/PointLight.o"
 	@echo "... src/engine/components/PointLight.i"
 	@echo "... src/engine/components/PointLight.s"
+	@echo "... src/engine/components/Skybox.o"
+	@echo "... src/engine/components/Skybox.i"
+	@echo "... src/engine/components/Skybox.s"
 	@echo "... src/engine/ui/EngineUI.o"
 	@echo "... src/engine/ui/EngineUI.i"
 	@echo "... src/engine/ui/EngineUI.s"

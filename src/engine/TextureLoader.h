@@ -7,10 +7,13 @@
 
 
 #include <glad/glad.h>
+#include <vector>
+#include <string>
 
 class TextureLoader {
 public:
     static GLuint LoadTexture(const char * path);
+    static GLuint LoadCubemap(std::vector<std::string> faces);
 };
 
 
