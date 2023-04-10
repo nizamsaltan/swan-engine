@@ -14,7 +14,7 @@ Swan Engine is 3D graphics engine written in C++ using OpenGL. This engine speci
 
 ### Requirements
 For Debian based distros
-`apt install assimp-utils libglfw3 libglfw3-dev cmake`
+`apt install assimp-utils libassimp-dev libglfw3 libglfw3-dev cmake`
 
 For Arch Linux based distros
 `pacman -S assimp glfw cmake` 
