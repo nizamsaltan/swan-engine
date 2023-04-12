@@ -22,8 +22,8 @@ void setLights(Shader lightingShader);
 
 // TODO: Make an input class and add these vars
 // camera
-float lastX = Window::SCR_WIDTH / 2.0f;
-float lastY = Window::SCR_HEIGHT / 2.0f;
+float lastX = (float)Window::SCR_WIDTH / 2.0f;
+float lastY = (float)Window::SCR_HEIGHT / 2.0f;
 
 FrameBuffer* screenBuffer;
 
@@ -44,7 +44,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(Window::SCR_WIDTH, Window::SCR_HEIGHT, "Swan Engine", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow((int)Window::SCR_WIDTH, (int)Window::SCR_HEIGHT, "Swan Engine", nullptr, nullptr);
     if (window == nullptr)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -72,6 +72,11 @@ int main()
     Shader ourShader("./resources/shaders/default.vert", "./resources/shaders/default.frag");
     Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");
 
+    // Set shader values
+    ourShader.use();
+    ourShader.setInt("material.diffuse", 0);
+    ourShader.setInt("material.specular", 1);
+
     // Have 4 point lights in code
     for (size_t i = 0; i < 2; i++)
     {
@@ -79,10 +84,9 @@ int main()
         pointLights.push_back(pointLight);
     }
 
-
     Skybox skybox;
 
-    screenBuffer = new FrameBuffer(Window::SCR_WIDTH, Window::SCR_HEIGHT);
+    screenBuffer = new FrameBuffer((float)Window::SCR_WIDTH, (float)Window::SCR_HEIGHT);
 
     // render loop
     // -----------
@@ -107,6 +111,10 @@ int main()
 
         // don't forget to enable shader before setting uniforms
         ourShader.use();
+        ourShader.setVec3("viewPos", EngineCamera::Position);
+        ourShader.setFloat("material.shininess", 3.0f);
+
+        setLights(ourShader);
 
         // view/projection transformations
         glm::mat4 projection = EngineCamera::GetProjectionMatrix();
@@ -121,7 +129,7 @@ int main()
         ourShader.setMat4("model", model);
         ourModel.Draw(ourShader);
 
-        setLights(ourShader);
+        //setLights(ourShader);
         //TODO: Make other light types
         for (size_t i = 0; i < pointLights.size(); i++)
             pointLights[i].HandleLight();
@@ -239,13 +247,13 @@ void setLights(Shader lightingShader)
     // TODO: Add this function to mesh class itself
     // directional light
     lightingShader.setVec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
-    lightingShader.setVec3("dirLight.ambient", 0.05f, 0.05f, 0.05f);
+    lightingShader.setVec3("dirLight.ambient", 1.0f, 1.0f, 1.0f);
     lightingShader.setVec3("dirLight.diffuse", 0.4f, 0.4f, 0.4f);
     lightingShader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
 
     // 1. Get point light in list
     // 2. Set number of point lights to shader
-    
+
     pointLights[0].Position = glm::vec3(0.0f, 5.0f, 0.0f); // for debug purpose
     pointLights[1].SetBasicColor(glm::vec3(0.0f, 0.0f, 1.0f), 1);
     for (int i = 0; i < pointLights.size(); i++)

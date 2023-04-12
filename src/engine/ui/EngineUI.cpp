@@ -79,7 +79,6 @@ void EngineUI::PreRender(FrameBuffer* buffer)
     ImGui::End();
     ImGui::PopStyleVar();
 
-
     ImGui::Render();
 }
 

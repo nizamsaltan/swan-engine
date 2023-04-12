@@ -1,0 +1,3 @@
+/home/nizam/Documents/GitHub/swan-engine/cmake-build-debug/CMakeFiles/SwanEngine.dir
+/home/nizam/Documents/GitHub/swan-engine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nizam/Documents/GitHub/swan-engine/cmake-build-debug/CMakeFiles/rebuild_cache.dir

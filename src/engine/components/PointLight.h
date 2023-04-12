@@ -16,9 +16,10 @@ public:
     glm::vec3 Ambient = glm::vec3(0.1f, 0.0f, 0.0f);
     glm::vec3 Diffuse = glm::vec3(1.0f, 0.0f, 0.0f);
     glm::vec3 Specular = glm::vec3(1.0f, 0.0f, 0.0f);
+    // Default values: https://learnopengl.com/Lighting/Light-casters
     float Constant = 1.0f;
-    float Linear = 0.7f;
-    float Quadratic = 1.8f;
+    float Linear = 0.35f;
+    float Quadratic = 0.44f;
 
     unsigned int VBO, VAO, EBO, texture;
     Shader textureShader;

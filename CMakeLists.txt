@@ -21,7 +21,7 @@ set( SOURCE
         src/engine/components/PointLight.h
         src/engine/components/Skybox.cpp
         src/engine/components/Skybox.h
-)
+        src/engine/Model.cpp)
 
 set( LIB "lib/glad.c" )
 
