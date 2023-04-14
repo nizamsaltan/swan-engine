@@ -7,12 +7,15 @@
 
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <glm/gtx/string_cast.hpp>
 #include <glad/glad.h>
+#include <iostream>
 
 #include "../../cube_vertices.h"
 #include "../TextureLoader.h"
 #include "EngineCamera.h"
 #include "../../Global.h"
+
 
 PointLight::PointLight()
 {
@@ -59,6 +62,9 @@ void PointLight::HandleLight()
     glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
     // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
     textureShader.setMat4("projection", projection);
+
+    // set color of object
+    textureShader.setVec3("objectColor", Ambient);
 
     // render container
     glBindVertexArray(VAO);
@@ -114,5 +120,6 @@ void PointLight::Compile()
 
     // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
     textureShader.use();
-    textureShader.setInt("texture", 0);
+    textureShader.setInt("tex", 0);
+    textureShader.setFloat("colorForce", 0.5f);
 }

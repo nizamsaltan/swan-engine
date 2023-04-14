@@ -3,7 +3,7 @@ Swan Engine is 3D graphics engine written in C++ using OpenGL. This engine speci
 
 // TODO:
 
-![Referance](https://raw.githubusercontent.com/nizamsaltan/swan-engine/main/resources/Screenshot_20230405.png)
+![Referance](https://raw.githubusercontent.com/nizamsaltan/swan-engine/main/resources/Screenshot_20230415.png)
 
 ## Tools
 - [GLFW](https://www.glfw.org/) -> Window creation

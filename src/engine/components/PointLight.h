@@ -12,8 +12,8 @@ class PointLight
 {
 public:
     // Light data
-    glm::vec3 Position = glm::vec3(0.0f, 0.0f, 0.0f);
-    glm::vec3 Ambient = glm::vec3(0.1f, 0.0f, 0.0f);
+    glm::vec3 Position = glm::vec3(0.1f, 0.0f, 0.0f);
+    glm::vec3 Ambient = glm::vec3(1.0f, 0.0f, 0.0f);
     glm::vec3 Diffuse = glm::vec3(1.0f, 0.0f, 0.0f);
     glm::vec3 Specular = glm::vec3(1.0f, 0.0f, 0.0f);
     // Default values: https://learnopengl.com/Lighting/Light-casters

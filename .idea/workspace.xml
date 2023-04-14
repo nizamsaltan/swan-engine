@@ -21,22 +21,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b68bd90-9538-48ff-8814-c2b7b159a589" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/engine/Model.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Screenshot_20230415.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/textures/engine/lamp2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-12T19-58-40-0738.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/shaders/default.frag" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shaders/default.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/shaders/default.vert" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shaders/default.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Mesh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/shaders/texture.frag" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shaders/texture.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/textures/engine/lamp.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/textures/engine/lamp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/PointLight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/PointLight.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/components/PointLight.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/PointLight.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/ui/EngineUI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/ui/EngineUI.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,29 +69,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nizam/Documents/GitHub/swan-engine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/nizam/Documents/GitHub/swan-engine/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/shaders" />
       <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/resources/shaders" />
       <recent name="$PROJECT_DIR$/resources/textures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -97,12 +100,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="SwanEngine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://../" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwanEngine" TARGET_NAME="SwanEngine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SwanEngine" RUN_TARGET_NAME="SwanEngine">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwanEngine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://../" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwanEngine" TARGET_NAME="SwanEngine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SwanEngine" RUN_TARGET_NAME="SwanEngine">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -135,6 +138,9 @@
       <workItem from="1681308708562" duration="199000" />
       <workItem from="1681320763436" duration="1481000" />
       <workItem from="1681327170283" duration="2452000" />
+      <workItem from="1681382307311" duration="76000" />
+      <workItem from="1681420350120" duration="684000" />
+      <workItem from="1681508997372" duration="3134000" />
     </task>
     <servers />
   </component>
