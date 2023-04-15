@@ -5,8 +5,9 @@
 #include <string>
 #include <glad/glad.h>
 #include "../Shader.h"
+#include "../entity/Component.h"
 
-class Skybox 
+class Skybox : public Component
 {
 public:
     std::vector<std::string> Faces
@@ -22,10 +23,10 @@ public:
     GLuint CubemapTexture;
     Shader SkyboxShader;
 
-    Skybox();
-    Skybox(std::vector<std::string> faces);
+    void HandleSkybox() const;
 
-    void HandleSkybox();
+    void Update() override;
+    void Start() override;
 private:
     unsigned int VAO, VBO;
     void compile();

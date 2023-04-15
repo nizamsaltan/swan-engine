@@ -6,10 +6,11 @@
 
 #include "Global.h"
 #include "engine/ui/EngineUI.h"
-#include "engine/Model.h"
-#include "engine/components/EngineCamera.h"
+#include "engine/components/Model.h"
+#include "engine/EngineCamera.h"
 #include "engine/components/PointLight.h"
 #include "engine/components/Skybox.h"
+#include "engine/entity/Entity.h"
 
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height);
 void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double yPosIn);
@@ -23,7 +24,7 @@ float lastY = (float)Window::SCR_HEIGHT / 2.0f;
 
 FrameBuffer* screenBuffer;
 
-//std::vector<PointLight> pointLights;
+Entity testEntity;
 
 int main()
 {
@@ -67,7 +68,6 @@ int main()
     // build and compile our shader and model
     Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");
 
-
     // Have 4 point lights in code, Just for TEST
     for (size_t i = 0; i < 2; i++)
     {
@@ -76,6 +76,8 @@ int main()
     }
 
     Skybox skybox;
+    testEntity.AddComponent(skybox);
+    testEntity.CallStart();
 
     screenBuffer = new FrameBuffer((float)Window::SCR_WIDTH, (float)Window::SCR_HEIGHT);
 
@@ -104,7 +106,8 @@ int main()
         ourModel.Draw();
 
         // Render skybox lastly
-        skybox.HandleSkybox();
+        //skybox.HandleSkybox();
+        testEntity.CallUpdate();
 
         // Scene texture frame buffer
         // now bind back to default framebuffer and draw a quad plane with the attached framebuffer color texture

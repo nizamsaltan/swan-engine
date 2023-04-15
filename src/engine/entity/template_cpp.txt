@@ -1,0 +1,11 @@
+#include "FILE_NAME.h"
+
+// Start calls only at beginning
+void CLASS_NAME::Start() {
+
+}
+
+// Update calls on every frame
+void CLASS_NAME::Update() {
+
+}

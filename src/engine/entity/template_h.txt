@@ -1,0 +1,7 @@
+#include "Component.h"
+
+class CLASS_NAME : public Component {
+public:
+    void Update() override;
+    void Start() override;
+};

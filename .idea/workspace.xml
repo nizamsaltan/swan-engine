@@ -21,19 +21,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b68bd90-9538-48ff-8814-c2b7b159a589" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/engine/components/Transform.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/components/Transform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/Component.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/Component.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/Entity.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/Entity.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/template_cpp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/template_h.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3e430f863dcf83e3a677.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-13T21-16-59-0321.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-SwanEngine-Debug-ed8a3c2d07302d792b22.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Mesh.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/EngineCamera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCamera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/EngineCamera.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCamera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/PointLight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/PointLight.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/Skybox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Skybox.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/Skybox.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Skybox.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +109,7 @@
       <recent name="$PROJECT_DIR$/resources/textures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/engine" />
       <recent name="$PROJECT_DIR$/src/engine/components" />
       <recent name="$PROJECT_DIR$/resources/shaders" />
     </key>
@@ -131,7 +151,9 @@
       <workItem from="1681382307311" duration="76000" />
       <workItem from="1681420350120" duration="684000" />
       <workItem from="1681508997372" duration="3262000" />
-      <workItem from="1681517288290" duration="1570000" />
+      <workItem from="1681517288290" duration="4624000" />
+      <workItem from="1681539656877" duration="2169000" />
+      <workItem from="1681546963084" duration="1864000" />
     </task>
     <servers />
   </component>

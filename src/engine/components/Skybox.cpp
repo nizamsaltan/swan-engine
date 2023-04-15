@@ -1,23 +1,19 @@
 #include "Skybox.h"
 
-#include <glm/gtc/matrix_transform.hpp>
-
-#include "../../Global.h"
 #include "../TextureLoader.h"
-#include "EngineCamera.h"
+#include "../EngineCamera.h"
 
-Skybox::Skybox()
-{    
+void Skybox::Start() {
+    //Component::Start();
     compile();
 }
 
-Skybox::Skybox(std::vector<std::string> faces)
-{    
-    faces = Faces;
-    compile();
+void Skybox::Update() {
+    //Component::Update();
+    HandleSkybox();
 }
 
-void Skybox::HandleSkybox()
+void Skybox::HandleSkybox() const
 {
     // draw skybox as last
     glDepthFunc(GL_LEQUAL);  // change depth function so depth test passes when values are equal to depth buffer's content
@@ -93,7 +89,7 @@ void Skybox::compile()
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)nullptr);
 
     // Skybox cubemap
     CubemapTexture = TextureLoader::LoadCubemap(Faces);

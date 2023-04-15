@@ -8,20 +8,20 @@ set( SOURCE
         src/cube_vertices.h
         src/engine/FrameBuffer.cpp
         src/engine/FrameBuffer.h
-        src/engine/Mesh.h
-        src/engine/Model.h
+        src/engine/components/Mesh.h
+        src/engine/components/Model.h
         src/engine/TextureLoader.cpp
         src/engine/TextureLoader.h
         src/engine/ui/EngineUI.cpp
         src/engine/ui/EngineUI.h
         src/engine/ui/imgui_style.h
-        src/engine/components/EngineCamera.cpp
-        src/engine/components/EngineCamera.h
+        src/engine/EngineCamera.cpp
+        src/engine/EngineCamera.h
         src/engine/components/PointLight.cpp
         src/engine/components/PointLight.h
         src/engine/components/Skybox.cpp
         src/engine/components/Skybox.h
-        src/engine/Model.cpp)
+        src/engine/components/Model.cpp src/engine/entity/Entity.cpp src/engine/entity/Entity.h src/engine/entity/Component.cpp src/engine/entity/Component.h src/engine/components/Transform.cpp src/engine/components/Transform.h)
 
 set( LIB "lib/glad.c" )
 
