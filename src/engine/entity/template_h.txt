@@ -2,6 +2,8 @@
 
 class CLASS_NAME : public Component {
 public:
+
+    // Component callbacks
     void Update() override;
     void Start() override;
 };

@@ -13,18 +13,29 @@
 
 Model::Model(const std::string &path, bool gamma)
 {
+    modelPath = path;
+}
+
+
+void Model::Start() {
     // build and compile our shader
     shader.VertexPath = "./resources/shaders/default.vert";
     shader.FragmentPath = "./resources/shaders/default.frag";
     shader.compile();
 
     // Load model
-    loadModel(path);
+    loadModel(modelPath);
 
     // Set shader values
     shader.use();
     shader.setInt("material.diffuse", 0);
     shader.setInt("material.specular", 1);
+}
+
+void Model::Update() {
+    //Component::Update();
+
+    Draw();
 }
 
 void Model::Draw()

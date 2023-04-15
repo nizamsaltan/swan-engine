@@ -21,19 +21,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b68bd90-9538-48ff-8814-c2b7b159a589" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/engine/components/Transform.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/components/Transform.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/entity/Component.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/entity/Component.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/entity/Entity.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/entity/Entity.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/entity/template_cpp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/entity/template_h.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/Scene.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/entity/Scene.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3e430f863dcf83e3a677.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-13T21-16-59-0321.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-SwanEngine-Debug-ed8a3c2d07302d792b22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b162a63e0f5025e23d8e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-15T06-21-11-0557.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-SwanEngine-Debug-e2f69f2383c5d98d913a.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SwanEngine" afterDir="false" />
@@ -45,14 +39,9 @@
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_glfw.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/imgui/backends/imgui_impl_opengl3.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Mesh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Model.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/components/EngineCamera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCamera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/components/EngineCamera.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/EngineCamera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/components/PointLight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/PointLight.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/components/Skybox.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Skybox.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engine/components/Skybox.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Skybox.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/components/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/components/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/entity/template_h.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/entity/template_h.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +104,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SwanEngine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://../" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SwanEngine" TARGET_NAME="SwanEngine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SwanEngine" RUN_TARGET_NAME="SwanEngine">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -153,7 +147,7 @@
       <workItem from="1681508997372" duration="3262000" />
       <workItem from="1681517288290" duration="4624000" />
       <workItem from="1681539656877" duration="2169000" />
-      <workItem from="1681546963084" duration="1864000" />
+      <workItem from="1681546963084" duration="3216000" />
     </task>
     <servers />
   </component>

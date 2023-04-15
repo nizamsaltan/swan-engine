@@ -21,7 +21,7 @@ set( SOURCE
         src/engine/components/PointLight.h
         src/engine/components/Skybox.cpp
         src/engine/components/Skybox.h
-        src/engine/components/Model.cpp src/engine/entity/Entity.cpp src/engine/entity/Entity.h src/engine/entity/Component.cpp src/engine/entity/Component.h src/engine/components/Transform.cpp src/engine/components/Transform.h)
+        src/engine/components/Model.cpp src/engine/entity/Entity.cpp src/engine/entity/Entity.h src/engine/entity/Component.cpp src/engine/entity/Component.h src/engine/components/Transform.cpp src/engine/components/Transform.h src/engine/entity/Scene.cpp src/engine/entity/Scene.h)
 
 set( LIB "lib/glad.c" )
 

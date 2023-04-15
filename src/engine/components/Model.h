@@ -10,6 +10,7 @@
 #include "../Shader.h"
 #include "Mesh.h"
 #include "PointLight.h"
+#include "../entity/Component.h"
 
 #include <string>
 #include <fstream>
@@ -19,13 +20,14 @@
 #include <vector>
 using namespace std;
 
-class Model
+class Model : public Component
 {
 public:
     // model data
     vector<Texture> textures_loaded;	// stores all the textures loaded so far, optimization to make sure textures aren't loaded more than once.
     vector<Mesh>    meshes;
     string directory;
+    string modelPath;
     Shader shader;
     bool gammaCorrection{};
 
@@ -40,6 +42,10 @@ public:
     // deallocate mesh data
     void DeallocateModel();
 
+
+    // Component callbacks
+    void Update() override;
+    void Start() override;
 private:
     // loads a model with supported ASSIMP extensions from file and stores the resulting meshes in the meshes vector.
     void loadModel(string const &path);

@@ -11,6 +11,7 @@
 #include "engine/components/PointLight.h"
 #include "engine/components/Skybox.h"
 #include "engine/entity/Entity.h"
+#include "engine/entity/Scene.h"
 
 void framebuffer_size_callback([[maybe_unused]] GLFWwindow* window, int width, int height);
 void mouse_callback([[maybe_unused]] GLFWwindow* window, double xPosIn, double yPosIn);
@@ -24,6 +25,7 @@ float lastY = (float)Window::SCR_HEIGHT / 2.0f;
 
 FrameBuffer* screenBuffer;
 
+Scene testScene;
 Entity testEntity;
 
 int main()
@@ -65,6 +67,8 @@ int main()
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
 
+
+    // TODO: Just for test. Implement GUI controls
     // build and compile our shader and model
     Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");
 
@@ -75,9 +79,13 @@ int main()
         ourModel.pointLights.push_back(pointLight);
     }
 
+    // TODO: Just for test. Implement GUI controls
     Skybox skybox;
     testEntity.AddComponent(skybox);
-    testEntity.CallStart();
+    testEntity.AddComponent(ourModel);
+    testScene.AddEntity(testEntity);
+    testScene.CallStart();
+
 
     screenBuffer = new FrameBuffer((float)Window::SCR_WIDTH, (float)Window::SCR_HEIGHT);
 
@@ -103,11 +111,11 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // Render model
-        ourModel.Draw();
-
+        //ourModel.Draw();,
         // Render skybox lastly
         //skybox.HandleSkybox();
-        testEntity.CallUpdate();
+        //testEntity.CallUpdate();
+        testScene.CallUpdate();
 
         // Scene texture frame buffer
         // now bind back to default framebuffer and draw a quad plane with the attached framebuffer color texture
