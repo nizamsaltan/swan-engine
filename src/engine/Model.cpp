@@ -8,17 +8,55 @@
 #include <assimp/postprocess.h>
 
 #include "TextureLoader.h"
+#include "components/EngineCamera.h"
 
 
 Model::Model(const std::string &path, bool gamma)
 {
+    // build and compile our shader
+    shader.VertexPath = "./resources/shaders/default.vert";
+    shader.FragmentPath = "./resources/shaders/default.frag";
+    shader.compile();
+
+    // Load model
     loadModel(path);
+
+    // Set shader values
+    shader.use();
+    shader.setInt("material.diffuse", 0);
+    shader.setInt("material.specular", 1);
 }
 
-void Model::Draw(Shader &shader)
+void Model::Draw()
 {
+    // don't forget to enable shader before setting uniforms
+    shader.use();
+    shader.setVec3("viewPos", EngineCamera::Position);
+    shader.setFloat("material.shininess", 3.0f);
+
+    // set light attributes
+    handleLights();
+
+    // view/projection transformations
+    glm::mat4 projection = EngineCamera::GetProjectionMatrix();
+    glm::mat4 view = EngineCamera::GetViewMatrix();
+    shader.setMat4("projection", projection);
+    shader.setMat4("view", view);
+
+    // render the loaded model
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down, so it's at the center of the scene
+    model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
+    shader.setMat4("model", model);
+
+    // Finally draw meshes
     for(unsigned int i = 0; i < meshes.size(); i++)
         meshes[i].Draw(shader);
+
+    // Draw light viewport textures
+    //TODO: Make other light types
+    for (size_t i = 0; i < pointLights.size(); i++)
+        pointLights[i].HandleLight();
 }
 
 void Model::loadModel(string const &path)
@@ -39,6 +77,48 @@ void Model::loadModel(string const &path)
     processNode(scene->mRootNode, scene);
 }
 
+void Model::handleLights()
+{
+    // TODO: Add this function to mesh class itself
+    // directional light
+    shader.setVec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
+    shader.setVec3("dirLight.ambient", 1.0f, 1.0f, 1.0f);
+    shader.setVec3("dirLight.diffuse", 0.4f, 0.4f, 0.4f);
+    shader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
+
+    // 1. Get point light in list
+    // 2. Set number of point lights to shader
+
+    pointLights[0].Position = glm::vec3(0.0f, 5.0f, 0.0f); // for debug purpose
+    pointLights[1].SetBasicColor(glm::vec3(0.0f, 0.0f, 1.0f), 1);
+    for (int i = 0; i < pointLights.size(); i++)
+    {
+        std::string target = "pointLights[" + std::to_string(i) + "].";
+        shader.setVec3(target + "position", pointLights[i].Position);
+        shader.setVec3(target + "ambient", pointLights[i].Ambient);
+        shader.setVec3(target + "diffuse", pointLights[i].Diffuse);
+        shader.setVec3(target + "specular", pointLights[i].Specular);
+        shader.setFloat(target + "constant", pointLights[i].Constant);
+        shader.setFloat(target + "linear", pointLights[i].Linear);
+        shader.setFloat(target + "quadratic", pointLights[i].Quadratic);
+    }
+
+    // spotLight
+    //shader.setVec3("spotLight.position", EngineCamera::Position);
+    //shader.setVec3("spotLight.direction", EngineCamera::Front);
+    shader.setVec3("spotLight.position", glm::vec3(0.0f));
+    shader.setVec3("spotLight.direction", glm::vec3(0.0f));
+    shader.setVec3("spotLight.ambient", 0.0f, 0.0f, 0.0f);
+    shader.setVec3("spotLight.diffuse", 1.0f, 1.0f, 1.0f);
+    shader.setVec3("spotLight.specular", 1.0f, 1.0f, 1.0f);
+    shader.setFloat("spotLight.constant", 1.0f);
+    shader.setFloat("spotLight.linear", 0.09f);
+    shader.setFloat("spotLight.quadratic", 0.032f);
+    shader.setFloat("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
+    shader.setFloat("spotLight.outerCutOff", glm::cos(glm::radians(15.0f)));
+
+}
+
 void Model::processNode(aiNode *node, const aiScene *scene)
 {
     // process each mesh located at the current node
@@ -54,6 +134,13 @@ void Model::processNode(aiNode *node, const aiScene *scene)
     {
         processNode(node->mChildren[i], scene);
     }
+}
+
+void Model::DeallocateModel()
+{
+    // Remove point light objects
+    for (size_t i = 0; i < pointLights.size(); i++)
+        pointLights[i].DeallocateLight();
 }
 
 

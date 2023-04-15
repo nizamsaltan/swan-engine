@@ -3,7 +3,7 @@ Swan Engine is 3D graphics engine written in C++ using OpenGL. This engine speci
 
 // TODO:
 
-![Referance](https://raw.githubusercontent.com/nizamsaltan/swan-engine/main/resources/Screenshot_20230415.png)
+![Reference](https://raw.githubusercontent.com/nizamsaltan/swan-engine/main/resources/Screenshot_20230415.png)
 
 ## Tools
 - [GLFW](https://www.glfw.org/) -> Window creation
@@ -22,8 +22,8 @@ For Arch Linux based distros
 ## Development & Contributions
 - Install requirements above
 - Clone repo in main branch
-- Use ./run script to quickly compile and test dev enviroment
+- Use ./run script to quickly compile and test dev environment
 
 ### TODO
-- Improve Mesh class (use shaders indside of Mesh class and handle render methods etc.)
+- ~~Improve Mesh class (use shaders inside of Mesh class and handle render methods etc.)~~
 - Improve default shader (add user defined light sources etc.)
