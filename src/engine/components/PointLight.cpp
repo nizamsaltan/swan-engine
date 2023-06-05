@@ -111,7 +111,7 @@ void PointLight::Compile()
     glEnableVertexAttribArray(1);
 
     // Texture
-    texture = TextureLoader::LoadTexture("./resources/textures/engine/lamp.png");
+    texture = TextureLoader::LoadTexture("./resources/textures/engine/lamp.png", true);
 
     // build and compile shader
     textureShader.VertexPath = "./resources/shaders/texture.vert";

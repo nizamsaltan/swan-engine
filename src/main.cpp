@@ -67,7 +67,6 @@ int main()
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
 
-
     // TODO: Just for test. Implement GUI controls
     // build and compile our shader and model
     Model ourModel("./resources/models/example/tower/wooden_watch_tower2.obj");

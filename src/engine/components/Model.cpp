@@ -264,7 +264,7 @@ vector<Texture> Model::loadMaterialTextures(aiMaterial *mat, aiTextureType type,
             string filename = this->directory + '/' + string(str.C_Str());
 
             Texture texture;
-            texture.id = TextureLoader::LoadTexture(filename.c_str());
+            texture.id = TextureLoader::LoadTexture(filename.c_str(), false);
             texture.type = typeName;
             texture.path = str.C_Str();
             textures.push_back(texture);

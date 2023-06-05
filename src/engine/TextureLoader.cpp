@@ -8,8 +8,9 @@
 #include <stb_image.h>
 #include <iostream>
 
-GLuint TextureLoader::LoadTexture(const char *path)
+GLuint TextureLoader::LoadTexture(const char *path, bool flip)
 {
+    stbi_set_flip_vertically_on_load(flip);
     GLuint textureID;
     glGenTextures(1, &textureID);
 
@@ -42,19 +43,19 @@ GLuint TextureLoader::LoadTexture(const char *path)
         stbi_image_free(data);
     }
 
-    stbi_set_flip_vertically_on_load(true);
+    stbi_set_flip_vertically_on_load(false);
 
     return textureID;
 }
 
 GLuint TextureLoader::LoadCubemap(std::vector<std::string> faces)
 {
+    stbi_set_flip_vertically_on_load(false);
+
     GLuint textureID;
     glGenTextures(1, &textureID);
     glBindTexture(GL_TEXTURE_CUBE_MAP, textureID);
-
-    stbi_set_flip_vertically_on_load(false);
-    
+   
     int width, height, nrChannels;
     for (unsigned int i = 0; i < faces.size(); i++)
     {

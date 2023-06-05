@@ -12,7 +12,7 @@
 
 class TextureLoader {
 public:
-    static GLuint LoadTexture(const char * path);
+    static GLuint LoadTexture(const char * path, bool flip);
     static GLuint LoadCubemap(std::vector<std::string> faces);
 };
 
