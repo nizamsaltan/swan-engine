@@ -9,7 +9,7 @@ mv build-debug/* .
 cmake ./CMakeLists.txt
 make
 
-./SwanEngine # &
+./SwanEngine &
 
 # clean up
-mv SwanEngine CMakeCache.txt cmake_install.cmake CMakeFiles/ ./build-debug/
+mv SwanEngine Makefile CMakeCache.txt cmake_install.cmake CMakeFiles/ ./build-debug/

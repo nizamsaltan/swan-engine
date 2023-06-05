@@ -321,6 +321,30 @@ lib/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/lib/glad.c.s
 .PHONY : lib/glad.c.s
 
+src/engine/EngineCamera.o: src/engine/EngineCamera.cpp.o
+.PHONY : src/engine/EngineCamera.o
+
+# target to build an object file
+src/engine/EngineCamera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/EngineCamera.cpp.o
+.PHONY : src/engine/EngineCamera.cpp.o
+
+src/engine/EngineCamera.i: src/engine/EngineCamera.cpp.i
+.PHONY : src/engine/EngineCamera.i
+
+# target to preprocess a source file
+src/engine/EngineCamera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/EngineCamera.cpp.i
+.PHONY : src/engine/EngineCamera.cpp.i
+
+src/engine/EngineCamera.s: src/engine/EngineCamera.cpp.s
+.PHONY : src/engine/EngineCamera.s
+
+# target to generate assembly for a file
+src/engine/EngineCamera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/EngineCamera.cpp.s
+.PHONY : src/engine/EngineCamera.cpp.s
+
 src/engine/FrameBuffer.o: src/engine/FrameBuffer.cpp.o
 .PHONY : src/engine/FrameBuffer.o
 
@@ -369,29 +393,29 @@ src/engine/TextureLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.s
 .PHONY : src/engine/TextureLoader.cpp.s
 
-src/engine/components/EngineCamera.o: src/engine/components/EngineCamera.cpp.o
-.PHONY : src/engine/components/EngineCamera.o
+src/engine/components/Model.o: src/engine/components/Model.cpp.o
+.PHONY : src/engine/components/Model.o
 
 # target to build an object file
-src/engine/components/EngineCamera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o
-.PHONY : src/engine/components/EngineCamera.cpp.o
+src/engine/components/Model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Model.cpp.o
+.PHONY : src/engine/components/Model.cpp.o
 
-src/engine/components/EngineCamera.i: src/engine/components/EngineCamera.cpp.i
-.PHONY : src/engine/components/EngineCamera.i
+src/engine/components/Model.i: src/engine/components/Model.cpp.i
+.PHONY : src/engine/components/Model.i
 
 # target to preprocess a source file
-src/engine/components/EngineCamera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.i
-.PHONY : src/engine/components/EngineCamera.cpp.i
+src/engine/components/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Model.cpp.i
+.PHONY : src/engine/components/Model.cpp.i
 
-src/engine/components/EngineCamera.s: src/engine/components/EngineCamera.cpp.s
-.PHONY : src/engine/components/EngineCamera.s
+src/engine/components/Model.s: src/engine/components/Model.cpp.s
+.PHONY : src/engine/components/Model.s
 
 # target to generate assembly for a file
-src/engine/components/EngineCamera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.s
-.PHONY : src/engine/components/EngineCamera.cpp.s
+src/engine/components/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Model.cpp.s
+.PHONY : src/engine/components/Model.cpp.s
 
 src/engine/components/PointLight.o: src/engine/components/PointLight.cpp.o
 .PHONY : src/engine/components/PointLight.o
@@ -440,6 +464,102 @@ src/engine/components/Skybox.s: src/engine/components/Skybox.cpp.s
 src/engine/components/Skybox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Skybox.cpp.s
 .PHONY : src/engine/components/Skybox.cpp.s
+
+src/engine/components/Transform.o: src/engine/components/Transform.cpp.o
+.PHONY : src/engine/components/Transform.o
+
+# target to build an object file
+src/engine/components/Transform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Transform.cpp.o
+.PHONY : src/engine/components/Transform.cpp.o
+
+src/engine/components/Transform.i: src/engine/components/Transform.cpp.i
+.PHONY : src/engine/components/Transform.i
+
+# target to preprocess a source file
+src/engine/components/Transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Transform.cpp.i
+.PHONY : src/engine/components/Transform.cpp.i
+
+src/engine/components/Transform.s: src/engine/components/Transform.cpp.s
+.PHONY : src/engine/components/Transform.s
+
+# target to generate assembly for a file
+src/engine/components/Transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/components/Transform.cpp.s
+.PHONY : src/engine/components/Transform.cpp.s
+
+src/engine/entity/Component.o: src/engine/entity/Component.cpp.o
+.PHONY : src/engine/entity/Component.o
+
+# target to build an object file
+src/engine/entity/Component.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Component.cpp.o
+.PHONY : src/engine/entity/Component.cpp.o
+
+src/engine/entity/Component.i: src/engine/entity/Component.cpp.i
+.PHONY : src/engine/entity/Component.i
+
+# target to preprocess a source file
+src/engine/entity/Component.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Component.cpp.i
+.PHONY : src/engine/entity/Component.cpp.i
+
+src/engine/entity/Component.s: src/engine/entity/Component.cpp.s
+.PHONY : src/engine/entity/Component.s
+
+# target to generate assembly for a file
+src/engine/entity/Component.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Component.cpp.s
+.PHONY : src/engine/entity/Component.cpp.s
+
+src/engine/entity/Entity.o: src/engine/entity/Entity.cpp.o
+.PHONY : src/engine/entity/Entity.o
+
+# target to build an object file
+src/engine/entity/Entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Entity.cpp.o
+.PHONY : src/engine/entity/Entity.cpp.o
+
+src/engine/entity/Entity.i: src/engine/entity/Entity.cpp.i
+.PHONY : src/engine/entity/Entity.i
+
+# target to preprocess a source file
+src/engine/entity/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Entity.cpp.i
+.PHONY : src/engine/entity/Entity.cpp.i
+
+src/engine/entity/Entity.s: src/engine/entity/Entity.cpp.s
+.PHONY : src/engine/entity/Entity.s
+
+# target to generate assembly for a file
+src/engine/entity/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Entity.cpp.s
+.PHONY : src/engine/entity/Entity.cpp.s
+
+src/engine/entity/Scene.o: src/engine/entity/Scene.cpp.o
+.PHONY : src/engine/entity/Scene.o
+
+# target to build an object file
+src/engine/entity/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Scene.cpp.o
+.PHONY : src/engine/entity/Scene.cpp.o
+
+src/engine/entity/Scene.i: src/engine/entity/Scene.cpp.i
+.PHONY : src/engine/entity/Scene.i
+
+# target to preprocess a source file
+src/engine/entity/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Scene.cpp.i
+.PHONY : src/engine/entity/Scene.cpp.i
+
+src/engine/entity/Scene.s: src/engine/entity/Scene.cpp.s
+.PHONY : src/engine/entity/Scene.s
+
+# target to generate assembly for a file
+src/engine/entity/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/entity/Scene.cpp.s
+.PHONY : src/engine/entity/Scene.cpp.s
 
 src/engine/ui/EngineUI.o: src/engine/ui/EngineUI.cpp.o
 .PHONY : src/engine/ui/EngineUI.o
@@ -522,21 +642,36 @@ help:
 	@echo "... lib/glad.o"
 	@echo "... lib/glad.i"
 	@echo "... lib/glad.s"
+	@echo "... src/engine/EngineCamera.o"
+	@echo "... src/engine/EngineCamera.i"
+	@echo "... src/engine/EngineCamera.s"
 	@echo "... src/engine/FrameBuffer.o"
 	@echo "... src/engine/FrameBuffer.i"
 	@echo "... src/engine/FrameBuffer.s"
 	@echo "... src/engine/TextureLoader.o"
 	@echo "... src/engine/TextureLoader.i"
 	@echo "... src/engine/TextureLoader.s"
-	@echo "... src/engine/components/EngineCamera.o"
-	@echo "... src/engine/components/EngineCamera.i"
-	@echo "... src/engine/components/EngineCamera.s"
+	@echo "... src/engine/components/Model.o"
+	@echo "... src/engine/components/Model.i"
+	@echo "... src/engine/components/Model.s"
 	@echo "... src/engine/components/PointLight.o"
 	@echo "... src/engine/components/PointLight.i"
 	@echo "... src/engine/components/PointLight.s"
 	@echo "... src/engine/components/Skybox.o"
 	@echo "... src/engine/components/Skybox.i"
 	@echo "... src/engine/components/Skybox.s"
+	@echo "... src/engine/components/Transform.o"
+	@echo "... src/engine/components/Transform.i"
+	@echo "... src/engine/components/Transform.s"
+	@echo "... src/engine/entity/Component.o"
+	@echo "... src/engine/entity/Component.i"
+	@echo "... src/engine/entity/Component.s"
+	@echo "... src/engine/entity/Entity.o"
+	@echo "... src/engine/entity/Entity.i"
+	@echo "... src/engine/entity/Entity.s"
+	@echo "... src/engine/entity/Scene.o"
+	@echo "... src/engine/entity/Scene.i"
+	@echo "... src/engine/entity/Scene.s"
 	@echo "... src/engine/ui/EngineUI.o"
 	@echo "... src/engine/ui/EngineUI.i"
 	@echo "... src/engine/ui/EngineUI.s"

@@ -81,12 +81,12 @@ clean: CMakeFiles/SwanEngine.dir/clean
 CMakeFiles/SwanEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target SwanEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nizam/Documents/GitHub/swan-engine/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target SwanEngine"
 .PHONY : CMakeFiles/SwanEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SwanEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizam/Documents/GitHub/swan-engine/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizam/Documents/GitHub/swan-engine/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SwanEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizam/Documents/GitHub/swan-engine/CMakeFiles 0
 .PHONY : CMakeFiles/SwanEngine.dir/rule
