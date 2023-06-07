@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_tables.cpp" "CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/include/imgui/imgui_tables.cpp.o.d"
   "/home/nizam/Documents/GitHub/swan-engine/include/imgui/imgui_widgets.cpp" "CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/include/imgui/imgui_widgets.cpp.o.d"
   "/home/nizam/Documents/GitHub/swan-engine/src/engine/FrameBuffer.cpp" "CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o.d"
+  "/home/nizam/Documents/GitHub/swan-engine/src/engine/Model.cpp" "CMakeFiles/SwanEngine.dir/src/engine/Model.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/Model.cpp.o.d"
   "/home/nizam/Documents/GitHub/swan-engine/src/engine/TextureLoader.cpp" "CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o.d"
   "/home/nizam/Documents/GitHub/swan-engine/src/engine/components/EngineCamera.cpp" "CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o.d"
   "/home/nizam/Documents/GitHub/swan-engine/src/engine/components/PointLight.cpp" "CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o" "gcc" "CMakeFiles/SwanEngine.dir/src/engine/components/PointLight.cpp.o.d"

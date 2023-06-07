@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SwanEngine.dir/lib/glad.c.o.d"
   "CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o"
   "CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.o.d"
+  "CMakeFiles/SwanEngine.dir/src/engine/Model.cpp.o"
+  "CMakeFiles/SwanEngine.dir/src/engine/Model.cpp.o.d"
   "CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o"
   "CMakeFiles/SwanEngine.dir/src/engine/TextureLoader.cpp.o.d"
   "CMakeFiles/SwanEngine.dir/src/engine/components/EngineCamera.cpp.o"

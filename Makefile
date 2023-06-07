@@ -345,6 +345,30 @@ src/engine/FrameBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/FrameBuffer.cpp.s
 .PHONY : src/engine/FrameBuffer.cpp.s
 
+src/engine/Model.o: src/engine/Model.cpp.o
+.PHONY : src/engine/Model.o
+
+# target to build an object file
+src/engine/Model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/Model.cpp.o
+.PHONY : src/engine/Model.cpp.o
+
+src/engine/Model.i: src/engine/Model.cpp.i
+.PHONY : src/engine/Model.i
+
+# target to preprocess a source file
+src/engine/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/Model.cpp.i
+.PHONY : src/engine/Model.cpp.i
+
+src/engine/Model.s: src/engine/Model.cpp.s
+.PHONY : src/engine/Model.s
+
+# target to generate assembly for a file
+src/engine/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwanEngine.dir/build.make CMakeFiles/SwanEngine.dir/src/engine/Model.cpp.s
+.PHONY : src/engine/Model.cpp.s
+
 src/engine/TextureLoader.o: src/engine/TextureLoader.cpp.o
 .PHONY : src/engine/TextureLoader.o
 
@@ -525,6 +549,9 @@ help:
 	@echo "... src/engine/FrameBuffer.o"
 	@echo "... src/engine/FrameBuffer.i"
 	@echo "... src/engine/FrameBuffer.s"
+	@echo "... src/engine/Model.o"
+	@echo "... src/engine/Model.i"
+	@echo "... src/engine/Model.s"
 	@echo "... src/engine/TextureLoader.o"
 	@echo "... src/engine/TextureLoader.i"
 	@echo "... src/engine/TextureLoader.s"
